@@ -9,8 +9,8 @@ words_per_minute: 200
 baseurl: /blog/
 
 # Website info
-title: Ghost
-description: The professional publishing platform
+title: Burak Ayyorgun
+description: My Blog for Technical Projects
 cover: assets/images/blog-cover.jpg
 logo: assets/images/blog-icon.png
 logo_dark: assets/images/favicon.png
