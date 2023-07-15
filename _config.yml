@@ -11,7 +11,7 @@ baseurl: /blog/
 # Website info
 title: Burak Ayyorgun
 description: My Blog for Technical Projects
-cover: assets/images/blog-cover.jpg
+cover: assets/images/planeBkg.jpg
 logo: assets/images/blog-icon.png
 logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
