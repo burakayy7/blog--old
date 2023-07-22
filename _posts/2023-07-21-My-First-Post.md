@@ -1,5 +1,5 @@
 ---
-title: "My-First-Post"
+title: "My First Post"
 date: 2023-07-21
 cover: 'assets/images/waves.jpg'
 ---
