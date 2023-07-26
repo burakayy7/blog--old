@@ -1,6 +1,6 @@
 ---
 title: "My First Post"
-navigation: True
+navigation: true
 date: 2023-07-21
 cover: 'assets/images/waves.jpg'
 ---
