@@ -1,6 +1,7 @@
 ---
 title: "Project Touch Delay"
 date: 2021-03-24
+class: post-template
 ---
 
 *I posted this 2 years after the actual date, so I kind of forgot exactly when!
