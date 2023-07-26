@@ -1,4 +1,5 @@
 ---
+navigation: true
 title: "SR latch Memory"
 date: 2021-03-26
 ---
