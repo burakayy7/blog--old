@@ -14,6 +14,8 @@ by Ben Eater. He is awesome!
 
 ![Schematic](assets/images/sr1.jpg)
 
+In this configuration, the circuit maintains a 'memory' of which button was pressed, and it's visialized through the LEDs.
+
 *this was actually built more than 2 years ago and it's been some time. I don't exactly remember the A1 and A2 functions and I am too lazy to spend 
 time trying to figure it out right now because I have a lot going on! Sorry!
 
