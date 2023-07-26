@@ -9,7 +9,7 @@ A simple latch is when the output of an OR gate is one of the inputs of the OR g
 
 The SR latch is more complicated but it consists of 2 OR gates.
 
-I am just going to provide a schematic that I built but if you'd like to learn more about SR Latchs you should 100% watch [this]('https://www.youtube.com/watch?v=KM0DdEaY5sY') video
+I am just going to provide a schematic that I built but if you'd like to learn more about SR Latchs you should 100% watch [this](https://www.youtube.com/watch?v=KM0DdEaY5sY) video
 by Ben Eater. He is awesome!
 
 ![Schematic](assets/images/sr1.jpg)
