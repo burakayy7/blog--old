@@ -1,4 +1,7 @@
 ---
+layout: post
+current: post
+navigation: true
 title: "Simple Oscillator"
 date: 2021-02-14
 cover: 'assets/images/oscilpic.jpg'
