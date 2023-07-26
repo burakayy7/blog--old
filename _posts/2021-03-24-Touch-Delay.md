@@ -1,5 +1,6 @@
 ---
 layout: post
+current: post
 title: "Project Touch Delay"
 date: 2021-03-24
 class: post-template
