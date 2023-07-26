@@ -1,4 +1,5 @@
 ---
+layout: page
 title: "My First Post"
 navigation: true
 date: 2023-07-21
