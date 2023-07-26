@@ -2,8 +2,8 @@
     <div class="site-nav-left">
         {% if page.current != 'home' %}
             {% if site.logo %}
-                <!-- <a class="site-nav-logo" href="{{ site.url }}{{ site.baseurl }}"><img src="{{ site.baseurl}}{{ site.logo }}" alt="{{ site.title }}" /></a> -->
-                <a class="site-nav-logo" href="{{ site.url }}{{ site.baseurl }}">Home</a>
+                <a class="site-nav-logo" href="{{ site.url }}{{ site.baseurl }}"><img src="{{ site.baseurl}}{{ site.logo }}" alt="{{ site.title }}" /></a>
+            <!-- <a class="site-nav-logo" href="{{ site.url }}{{ site.baseurl }}">Home</a> -->
             {% else %}
                 <a class="site-nav-logo" href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a>
             {% endif %}
