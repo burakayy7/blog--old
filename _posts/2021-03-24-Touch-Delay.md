@@ -1,0 +1,11 @@
+---
+title: "Project Touch Delay"
+date: 2021-03-24
+---
+
+*I posted this 2 years after the actual date, so I kind of forgot exactly when!
+Enjoy!
+
+This project is a very simple idea where after you touch a sensor and LED slowy turns on or off, hence the delay. The delay is caused from the 
+charging or discharging of a capacitor. 
+This circuit here is the delay but with a button instead of a touch sensor: 
