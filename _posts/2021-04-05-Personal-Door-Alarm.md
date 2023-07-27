@@ -12,7 +12,7 @@ Here is the schematic:
 ![schematic](assets/images/dooralarm.jpg)
 
 Here is how it works:
-First you are going to need some sort of reflector on you door. This alarm was built on a breadboard and placed on the floor right next to my door. The relfector was a white paper square, side length of 1 in. That paper was on a L shaped cardboard mount, which was taped to the bottom right corner of my door \(my door swings open to the left, clockwise\). The photoresistor detects the light that bounces off the reflector from the LED. That's how the circuit knows if the door was opened. If it was, the amount of light will decrease which will increase the resistance on the photoresistor. 
+First you are going to need some sort of reflector on you door. This alarm was built on a breadboard and placed on the floor right next to my door. The relfector was a white paper square, side length of 1 in. That paper was on a L shaped cardboard mount, which was taped to the bottom right corner of my door \(my door swings open to the left, clockwise\). The photoresistor detects the light that bounces off the reflector from the L1 LED. That's how the circuit knows if the door was opened. If it was, the amount of light will decrease which will increase the resistance on the photoresistor. 
 
 
 
