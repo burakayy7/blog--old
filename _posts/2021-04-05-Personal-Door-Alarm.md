@@ -46,20 +46,20 @@ But remember, when you press the two buttons, press them in some combination fir
 If you'd like to see it in action: [click here](https://www.youtube.com/shorts/vv188zN3ZNo)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
 
 
 *Again this was a long time ago so the date isn't exact.
