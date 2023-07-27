@@ -16,10 +16,11 @@ by Ben Eater. He is awesome!
 
 ![Schematic](assets/images/sr1.jpg)
 
+The A1 is a button and A2 is a reset button, however you could flip them and use either. 
+
 In this configuration, the circuit maintains a 'memory' of which button was pressed, and it's visialized through the LEDs.
 
-*this was actually built more than 2 years ago and it's been some time. I don't exactly remember the A1 and A2 functions and I am too lazy to spend 
-time trying to figure it out right now because I have a lot going on! Sorry!
+*this was actually built more than 2 years ago and it's been some time. I don't exactly remember the E1 and E2 functions and I am too lazy to spend time trying to figure it out right now because I have a lot going on! Sorry!
 
 However you could probably reverse engineer this by looking at Ben's video and this OR Gate I built: ![Schematic of OR gate](assets/images/sr2.jpg)
 Good Luck! Let me know if you got it!
