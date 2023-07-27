@@ -9,7 +9,10 @@ This projects is the result of people entering my room unwanted or frequently. I
 
 This alarm sounds a loud buzzer when the door is opened. 
 Here is the schematic: 
+![schematic](assets/images/dooralarm.jpg)
 
+Here is how it works:
+First you are going to need some sort of reflector on you door. 
 
 
 
