@@ -35,7 +35,11 @@ But if you create a button with a code on it, that only you know, which deactiva
 
 Now that will work. 
 
-But that code part is a bit too complicated for this simple project. So what I did, was I put two buttons in series and placed them in a cardboard box I built and taped to the the front of my wall next to the 'outside door'. Now I didn't actually draw this part of the ciruit, but you could probably engineer something along these lines. Build a copy of the circuit of T3, with the capacitor and resistor. Now, connect one end of the buttons to ground and the other to the collector of the transistor, T4. Then T4's output should be connected to the base of T3. This way, once you press both buttons for a sufficient amount of time, T4 will turn on which will turn T3 off. But once the capacitor on T4 is charged it will sound. Also make a circuit to discharge T4 and keep the capacitance of the capacitor on T4 high so you have time to get in. 
+But that code part is a bit too complicated for this simple project. So what I did, was I put two buttons in series and placed them in a cardboard box I built and taped to the the front of my wall next to the 'outside door'.
+
+![Pad](assets/images/da3.jpg)
+
+Now I didn't actually draw this part of the ciruit, but you could probably engineer something along these lines. Build a copy of the circuit of T3, with the capacitor and resistor. Now, connect one end of the buttons to ground and the other to the collector of the transistor, T4. Then T4's output should be connected to the base of T3. This way, once you press both buttons for a sufficient amount of time, T4 will turn on which will turn T3 off. But once the capacitor on T4 is charged it will sound. Also make a circuit to discharge T4 and keep the capacitance of the capacitor on T4 high so you have time to get in. 
 But remember, when you press the two buttons, press them in some combination first, cover the pad with your hand, as to not reveal to your intrusive family that the code is just long pressing both of the buttons at once. 
 
 If you'd like to see it in action: [click here](https://www.youtube.com/shorts/vv188zN3ZNo)
