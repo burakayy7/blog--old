@@ -2,6 +2,7 @@
 navigation: true
 title: "Personal Door Alarm"
 date: 2021-04-05
+cover: assets/images/daprofile.jpg
 class: post-template
 ---
 
