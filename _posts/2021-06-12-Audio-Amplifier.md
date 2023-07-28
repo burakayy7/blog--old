@@ -10,10 +10,15 @@ Here is a simple audio amplifier circuit. The BC337 transistor acts as the signa
 ![](assets/images/audioAmp.jpg)
 
 Rc = 130 ohms
+
 RE = 26 ohms
+
 R1 = 3.4 kOhms
+
 R2 = 1 kOhms
+
 C1 = C2 = 10 microfarad
+
 
 Hope this helps!
 
