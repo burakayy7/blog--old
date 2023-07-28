@@ -1,7 +1,7 @@
 ---
 navigation: true
 title: Simple Audio Amplifier
-date: 2021-06-12
+date: 2021-05-12
 class: post-template
 ---
 
