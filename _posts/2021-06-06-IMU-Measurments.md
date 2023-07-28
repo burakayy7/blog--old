@@ -76,4 +76,8 @@ It didn't work at all!!
 
 Why?
 
+So then what. 
+
+Well, I decided to look into Paul McWhorter
+
 Because the accelerometer measures accelerations on the sensor. So it is sensative to vibrations, which are very common on a plane.
