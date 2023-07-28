@@ -63,7 +63,11 @@ Well, you use math. Specifically, trig.
 People say that you don't need to know math if you want to be a programmer. And that's mostly true: if you want to be a low level coder.
 But if you want the be a real programmer, then you will need to master the fundamentals of math!
 
+![here is the explanation on paper](assets/images/imuaccel.jpg)
 
+If you'd like a more detailed explanation: [click here](https://toptechboy.com/9-axis-imu-lesson-6-determine-tilt-from-3-axis-accelerometer/)
+
+And you could probably put this in your Arduino code by using the Math library.
 
 Later, my immature brain, thought it was a good idea to control a foam glider with these measurments.
 
