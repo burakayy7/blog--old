@@ -13,7 +13,8 @@ I first started on a bunch of online tutorials on how to use this and I got the 
 
 Here is a short piece of code that will do the basic readings from the MPU6050:
 
-```#include <MPU6050.h>
+```
+#include <MPU6050.h>
 
 
 // MPU-6050 Short Example Sketch
