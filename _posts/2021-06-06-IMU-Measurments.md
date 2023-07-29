@@ -81,3 +81,9 @@ So then what.
 Well, I decided to look into Paul McWhorter
 
 Because the accelerometer measures accelerations on the sensor. So it is sensative to vibrations, which are very common on a plane.
+So I tried to apply a Low Pass Filter. Which basically filters out high frequency change, or vibrations. But this resulted in it being slow 
+
+So how do we fix the problem? Well we could use the gyroscope. 
+
+To learn how to do this, I wathced Paul McWhorter's IMU series which was a huge help. He is awesome and a great teacher.
+
