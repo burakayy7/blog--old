@@ -11,7 +11,8 @@ are made with MEMS \(Micro-electromechanical systems\), or cell-phone grade sens
 
 I first started on a bunch of online tutorials on how to use this and I got the accelerometer to measure angles. 
 
-Here is a short piece of code that will do the basic readings from the MPU6050:
+
+Here is a short piece of code that will do the basic readings from the MPU6050 \(also make sure you hooked up the sensor correclty, search it up\):
 
 ```
 #include <MPU6050.h>
@@ -76,14 +77,114 @@ It didn't work at all!!
 
 Why?
 
-So then what. 
-
-Well, I decided to look into Paul McWhorter
 
 Because the accelerometer measures accelerations on the sensor. So it is sensative to vibrations, which are very common on a plane.
-So I tried to apply a Low Pass Filter. Which basically filters out high frequency change, or vibrations. But this resulted in it being slow 
+So I tried to apply a Low Pass Filter. Which basically filters out high frequency change, or vibrations. But this resulted in it being slow. 
 
 So how do we fix the problem? Well we could use the gyroscope. 
 
-To learn how to do this, I wathced Paul McWhorter's IMU series which was a huge help. He is awesome and a great teacher.
+To learn how to do this, I wathced Paul McWhorter's IMU [lessons](https://www.youtube.com/watch?v=2AO_Gmh5K3Q&list=PLGs0VKk2DiYwEo-k0mjIkWXlkrJWAU4L9) which was a huge help. He is awesome and a great teacher. I tried to implement the same things on my MPU6050. 
+
+Here is the code: 
+
+```
+#include <MPU6050.h>
+
+#include<Wire.h>
+const int MPU_addr=0x68;  // I2C address of the MPU-6050
+int16_t AcX,ACY,AcY,AcZ,Tmp,GyX, GYX,GyY,GyZ;
+
+
+
+
+
+float thetaG=0;
+float phiG=0;
+
+float theta;
+float phi;
+
+float dt;
+unsigned long millisOld;
+
+
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+Wire.begin();
+  Wire.beginTransmission(MPU_addr);
+  Wire.write(0x6B);  // PWR_MGMT_1 register
+  Wire.write(0);     // set to zero (wakes up the MPU-6050)
+  Wire.endTransmission(true);
+  millisOld=millis();
+  pinMode(9, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+Wire.beginTransmission(MPU_addr);
+  Wire.write(0x3B);  // starting with register 0x3B (ACCEL_XOUT_H)
+  Wire.endTransmission(false);
+  Wire.requestFrom(MPU_addr,14,true);  // request a total of 14 registers
+  AcX=Wire.read()<<8|Wire.read();  // 0x3B (ACCEL_XOUT_H) & 0x3C (ACCEL_XOUT_L)    
+  AcY=Wire.read()<<8|Wire.read();  // 0x3D (ACCEL_YOUT_H) & 0x3E (ACCEL_YOUT_L)
+  AcZ=Wire.read()<<8|Wire.read();  // 0x3F (ACCEL_ZOUT_H) & 0x40 (ACCEL_ZOUT_L)
+  Tmp=Wire.read()<<8|Wire.read();  // 0x41 (TEMP_OUT_H) & 0x42 (TEMP_OUT_L)
+  GyX=Wire.read()<<8|Wire.read();  // 0x43 (GYRO_XOUT_H) & 0x44 (GYRO_XOUT_L)
+  GyY=Wire.read()<<8|Wire.read();  // 0x45 (GYRO_YOUT_H) & 0x46 (GYRO_YOUT_L)
+  GyZ=Wire.read()<<8|Wire.read();  // 0x47 (GYRO_ZOUT_H) & 0x48 (GYRO_ZOUT_L)
+
+
+
+
+
+dt=(millis()-millisOld)/1000.;
+millisOld=millis();
+
+thetaG=thetaG+GyY*dt;
+phiG=phiG+GyX*dt;
+
+Serial.print(",");
+Serial.print(thetaG);
+Serial.print(",");
+Serial.println(phiG);
+
+
+//Serial.println(thetaG);
+ delay(10);
+
+```
+
+It works by looking at the angular velocity \(what the gyro outputs\) in a time period \(in milliseconds\) and with simple math converts that to angles. 
+
+But if you were to run the code, you will see that even if we don't apply any rotation on the device, the ouptut line will have a positive slope. Meaning that it thinks we are rotating at a constant velocity, even if we aren't. This phenomenon is known as gyro drift. Because the value is drifting off. 
+
+At this point, I had realized that the BNO055 9-axis IMU is much higher quality than the MPU6050. It's also what Mr. McWhorter uses. 
+So I ordered on and hooked it up to my Arduino Nano, and this time, fully followed his tutorials. 
+
+And the BNO055 still had drift, but it was a bit more subtle.
+
+Now, there are are bunch of ways you could fix this:
+
+1. Apply some sort of filter to fuse the Accel. and Gyro. values to get orientation.
+
+2. Use the specs of the individual IMU, and some math, to counter act the drift.
+
+3. Or use the Quaternions outputed by the BNO055
+
+
+I actually, over time, ended up tring out all of them. And I think the quaternion option is most efficient, but more math heavy. As for the fusion one, you have some options: Paul shows us how to implement a complimentary filter, which is a decent and intuitive algorithm. However, if you want to use your IMU for anything more vibration intensive than a small quadcopter, then you'll need a better algorithm. Like the Kalman Filter. This filter is really common among professionals, and their are several tutorials and Arduino Libraries that would help with that.
+
+But since I am an extreme DIY person, I thought I was up to the task of learning the math behind the Kalman Filter. With the help of Joe Barnard [from BPS.Space](https://www.youtube.com/watch?v=BoevqNVv4ck), I thought it was a good idea to buy this book: [Optimal State Estimation by Dan Simon](https://www.amazon.com/gp/product/0471708585/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0471708585&linkCode=as2&tag=bps04-20&linkId=497a3ff6002cb340ec28ec73c731f00b). 
+
+Yikes!!
+
+Even though I am pretty good at AoPS, this book is not 8th/9th grade friendly. I quickly tried to learn some Linear ALgebra then gave this book a try. And I got somewhere, but not enought to implement a Kalman Filter, so I put this book on hold until I had gained some knowledge. 
+
+For refrence, this Kalman thing happened in the beginning og 2022, so in my 9th grade year. However, everything from quaternions and other algorithms happened a **year before** this Kalman stuff. So I am kind of kumping around the time line here, for you sake.
+
+But, back to the 8th grade:
+
+
 
