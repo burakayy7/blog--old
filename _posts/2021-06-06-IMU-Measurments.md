@@ -161,7 +161,7 @@ It works by looking at the angular velocity \(what the gyro outputs\) in a time 
 But if you were to run the code, you will see that even if we don't apply any rotation on the device, the ouptut line will have a positive slope. Meaning that it thinks we are rotating at a constant velocity, even if we aren't. This phenomenon is known as gyro drift. Because the value is drifting off. 
 
 At this point, I had realized that the BNO055 9-axis IMU is much higher quality than the MPU6050. It's also what Mr. McWhorter uses. 
-So I ordered on and hooked it up to my Arduino Nano, and this time, fully followed his tutorials. 
+So I ordered and hooked it up to my Arduino Nano, and this time, fully followed his tutorials. 
 
 And the BNO055 still had drift, but it was a bit more subtle.
 
