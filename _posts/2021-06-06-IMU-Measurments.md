@@ -176,6 +176,8 @@ Now, there are are bunch of ways you could fix this:
 
 I actually, over time, ended up tring out all of them. And I think the quaternion option is most efficient, but more math heavy. As for the fusion one, you have some options: Paul shows us how to implement a complimentary filter, which is a decent and intuitive algorithm. However, if you want to use your IMU for anything more vibration intensive than a small quadcopter, then you'll need a better algorithm. Like the Kalman Filter. This filter is really common among professionals, and their are several tutorials and Arduino Libraries that would help with that.
 
+Also, there are several other filters, like the Madwick and Mahony filters. But these are mainly used with a magnetometer for heading. 
+
 But since I am an extreme DIY person, I thought I was up to the task of learning the math behind the Kalman Filter. With the help of Joe Barnard [from BPS.Space](https://www.youtube.com/watch?v=BoevqNVv4ck), I thought it was a good idea to buy this book: [Optimal State Estimation by Dan Simon](https://www.amazon.com/gp/product/0471708585/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0471708585&linkCode=as2&tag=bps04-20&linkId=497a3ff6002cb340ec28ec73c731f00b). 
 
 Yikes!!
@@ -186,5 +188,6 @@ For refrence, this Kalman thing happened in the beginning of 2022, so in my 9th 
 
 But, back to the 8th grade:
 
+The first one I learned was the simple complimentary filter. 
 
 
