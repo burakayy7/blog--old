@@ -188,6 +188,6 @@ For refrence, this Kalman thing happened in the beginning of 2022, so in my 9th 
 
 But, back to the 8th grade:
 
-The first one I learned was the simple complimentary filter. 
+The first one I learned was the simple complimentary filter. It fuses the accelerometer values with the gyroscope values. But make sure you use the non-filter accelerometer values and the already integrated gyroscope values. 
 
 
