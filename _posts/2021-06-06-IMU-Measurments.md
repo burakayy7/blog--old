@@ -69,7 +69,7 @@ But if you want the be a real programmer, then you will need to master the funda
 
 If you'd like a more detailed explanation: [click here](https://toptechboy.com/9-axis-imu-lesson-6-determine-tilt-from-3-axis-accelerometer/)
 
-And you could probably put this in your Arduino code by using the Math library.
+And you could probably put this in your Arduino code by using the Math library. And you could also do something similar for the other 2 axes. 
 
 Later, my immature brain, thought it was a good idea to control a foam glider with these measurments.
 
@@ -189,5 +189,9 @@ For refrence, this Kalman thing happened in the beginning of 2022, so in my 9th 
 But, back to the 8th grade:
 
 The first one I learned was the simple complimentary filter. It fuses the accelerometer values with the gyroscope values. But make sure you use the non-filter accelerometer values and the already integrated gyroscope values. 
+
+The intuitive explanation here is somewhat derived from Paul McWhorter.
+
+If you've noticed, the accelerometer values can be trusted over the long term , but not over the short term because the accelerometer is sensative to vibration; creating short term noise in the signal. 
 
 
