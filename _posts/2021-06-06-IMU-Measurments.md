@@ -202,7 +202,7 @@ This line of code should accomplish the filter:
 theta=(theta+gyr.y()*dt)*.95+thetaM*.05;
 ```
 
-The theta is pitch. So our current theta is equal to out old theta plus the gyro angle times the bias. Now here thr gyro bias is 95%. That means we take 95% of our gyro angle, and this is added to 5% of the accelerometer angle. So over time, we are ever so slightly nudging the gyro value to the accelerometer value. Effectively, getting rid of the drift. But this only works on gyros with small drift. If the drift is higher, you might want to take less of the gyro, and more of the accelerometer.
+The theta is pitch. So our current theta is equal to out old theta plus the gyro angle times the bias. Now here the gyro bias is 95%. That means we take 95% of our gyro angle, and this is added to 5% of the accelerometer angle. So over time, we are ever so slightly nudging the gyro value to the accelerometer value. Effectively, getting rid of the drift. But this only works on gyros with small drift. If the drift is higher, you might want to take less of the gyro, and more of the accelerometer.
 
 Here is a good refrence video: [Brian Douglas](https://www.youtube.com/watch?v=whSw42XddsU)
 
