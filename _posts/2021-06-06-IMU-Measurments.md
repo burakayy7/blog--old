@@ -2,6 +2,7 @@
 navigation: true
 tite: "IMU Measurments"
 date: 2021-06-06
+cover: 'assets/images/imuPic.jpg'
 class: post-template
 ---
 
