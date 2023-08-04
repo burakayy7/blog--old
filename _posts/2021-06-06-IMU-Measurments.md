@@ -192,6 +192,6 @@ The first one I learned was the simple complimentary filter. It fuses the accele
 
 The intuitive explanation here is somewhat derived from Paul McWhorter.
 
-If you've noticed, the accelerometer values can be trusted over the long term , but not over the short term because the accelerometer is sensative to vibration; creating short term noise in the signal. 
+If you've noticed, the accelerometer values can be trusted over the long term , but not over the short term because the accelerometer is sensative to vibration; creating short term noise in the signal. And the gyro can't be trusted over the long term, because of the drift over time; however, it can be trusted in the short term. 
 
-
+So, we have to apply a low pass filter to the accelerometer values and a high pass filter on the gyro. The low pass filter puts a weighted bias on the old value and doesn't really trust the new values. Where the two weights add up to 1. Accordingly, a High pass filter on the gyro accomplishes the same thing, just the opposite way. 
