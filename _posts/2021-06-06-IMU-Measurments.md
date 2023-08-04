@@ -206,6 +206,44 @@ The theta is pitch. So our current theta is equal to out old theta plus the gyro
 
 Here is a good refrence video: [Brian Douglas](https://www.youtube.com/watch?v=whSw42XddsU)
 
-But this needs some tweaking to be used on a drone. Also, you would need to calibrate the gyro. 
+But this needs some tweaking to be used on a drone. Also, you would need to calibrate the gyro. Furthermore, this is subject to gimble lock. This happens when the y-axis is pointing staight up or straight down, + or - 90 degrees. We can overcome this by using complex numbers. 
+
+Now, this blog it already getting pretty long, so I will have to summarize a lot. However, if you use the specs from the MPU6050 datasheet, you will be able to minimize the drift. It will still be their, but it won't be as aggressive. For mor info, watch [this](https://www.youtube.com/watch?v=4BoIE8YQwM8) video by Joop Brooking. 
+
+Finally, for the quaternions. Now this math is heavy and I don't completely understand it, so I won't be able to explain it very well. But basically, quaternions are an extension to the comlex numbers, and can describe 3 dimensional rotations with 4 numbers, or the 4th dimension.
+
+*Please let me know if I am wrong about any of this. 
+
+But, to get quaternions from the BNO055 is easy:
+
+```
+uint8_t system, gyro, accel, mg = 0;
+myIMU.getCalibration(&system, &gyro, &accel, &mg);
+
+imu::Quaternion quat=myIMU.getQuat();
+
+q0=quat.w();
+q1=quat.x();
+q2=quat.y();
+q3=quat.z();
+
+rollActual=atan2(2*(q0*q1+q2*q3),1-2*(q1*q1+q2*q2));
+pitchActual=asin(2*(q0*q2-q3*q1));
+
+rollActual=rollActual/(2*3.141592654)*360;
+pitchActual=pitchActual/(2*3.141592654)*360;
+
+```
+where q0-q4 are predefined. 
+
+And after that we got the quaternion values, we can use 3 dimensional trig. to convert them to eular angles. Again, my main source here was Paul McWhorter's lessons. 
+
+But also check out [this wiki](https://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles) on the quaternion to eular conversion, and [this Stanford lecture](https://stanford.edu/class/ee267/lectures/lecture10.pdf) on IMUs.
+
+And that's it. 
+
+I will definetly making more post on the specifics on each, this was kind of an overview/summary. 
+
+Hope you enjoyed!!
 
 
