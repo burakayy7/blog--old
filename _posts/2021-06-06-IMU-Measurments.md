@@ -158,7 +158,7 @@ Serial.println(phiG);
 
 It works by looking at the angular velocity \(what the gyro outputs\) in a time period \(in milliseconds\) and with simple math converts that to angles. 
 
-But if you were to run the code, you will see that even if we don't apply any rotation on the device, the ouptut line will have a positive slope. Meaning that it thinks we are rotating at a constant velocity, even if we aren't. This phenomenon is known as gyro drift. Because the value is drifting off. 
+But if you were to run the code, you will see that even if we don't apply any rotation on the device, the ouptut line will have a positive slope. Meaning that it thinks we are rotating at a constant velocity, even if we aren't. This phenomenon is known as gyro drift. Because the value is drifting off. This happens becuase we are also integrating the gyro's inperfections, like noise. And over time, these errors add ip, causing unwanted drift. 
 
 At this point, I had realized that the BNO055 9-axis IMU is much higher quality than the MPU6050. It's also what Mr. McWhorter uses. 
 So I ordered and hooked it up to my Arduino Nano, and this time, fully followed his tutorials. 
@@ -195,3 +195,17 @@ The intuitive explanation here is somewhat derived from Paul McWhorter.
 If you've noticed, the accelerometer values can be trusted over the long term , but not over the short term because the accelerometer is sensative to vibration; creating short term noise in the signal. And the gyro can't be trusted over the long term, because of the drift over time; however, it can be trusted in the short term. 
 
 So, we have to apply a low pass filter to the accelerometer values and a high pass filter on the gyro. The low pass filter puts a weighted bias on the old value and doesn't really trust the new values. Where the two weights add up to 1. Accordingly, a High pass filter on the gyro accomplishes the same thing, just the opposite way. 
+
+This line of code should accomplish the filter:
+
+```
+theta=(theta+gyr.y()*dt)*.95+thetaM*.05;
+```
+
+The theta is pitch. So our current theta is equal to out old theta plus the gyro angle times the bias. Now here thr gyro bias is 95%. That means we take 95% of our gyro angle, and this is added to 5% of the accelerometer angle. So over time, we are ever so slightly nudging the gyro value to the accelerometer value. Effectively, getting rid of the drift. But this only works on gyros with small drift. If the drift is higher, you might want to take less of the gyro, and more of the accelerometer.
+
+Here is a good refrence video: [Brian Douglas](https://www.youtube.com/watch?v=whSw42XddsU)
+
+But this needs some tweaking to be used on a drone. Also, you would need to calibrate the gyro. 
+
+
