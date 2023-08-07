@@ -23,5 +23,11 @@ For the main frame, I went to CAD... NOOO. I was broke back then and didn't have
 
 In the end, I sketch-up something like this:
 
+![](assets/images/sbrSketch.jpg)
+
+and the dimensions:
+
+![](assets/images/sbrDim.jpg)
+
 
 
