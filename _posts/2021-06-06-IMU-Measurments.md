@@ -88,7 +88,7 @@ To learn how to do this, I wathced Paul McWhorter's IMU [lessons](https://www.yo
 
 Here is the code: 
 
-```cpp
+{%highlight cpp%}
 #include <MPU6050.h>
 
 #include<Wire.h>
@@ -155,7 +155,7 @@ Serial.println(phiG);
 //Serial.println(thetaG);
  delay(10);
 
-```
+{%endhighlight%}
 
 It works by looking at the angular velocity \(what the gyro outputs\) in a time period \(in milliseconds\) and with simple math converts that to angles. 
 
