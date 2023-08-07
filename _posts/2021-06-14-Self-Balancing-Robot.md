@@ -7,3 +7,21 @@ class: post-template
 ---
 
 
+I have been wanting to make this project for some time now. I have seen others do them with really expensive motors and devices and I wanted to test and see if I could build a functioning prototype with the $5 materials I had laying around my room.
+
+I first, looked at other's robots and how they designed their's. I also looked at which devices I had. Now for the main controller, I just used a 5v Arduino Nano board. But the IMu sensor was the challenging part. I first thought I could use a complimentary filter with the MPU6050, but that prooved to cause some oscillations and false orientation data. The cheap accelerometers would read too much vibrations and the gyros drift would sustain it well for long self-balancing. EVEN with the complimentary filter. Look, the comlimentary filter is great. But I wanted to remove as many failure points as possible for the first version. So for the first prototype, I decided to go the easy route: getting quaternions from the BNO055 and converting those to Eular angles.
+
+For the motors I had only geared DC motors. These are super cheap and shouldn't be used on robots like this! I wonder if this will cause me any pain in the future?
+
+And to drive those motors I had a L298N motor driver. This for sure will cause me problems and I knew it. I was just too broke to buy a better solution. This driver draws a lot of current. In fact, there is a voltage drop, from the input battery terminal to the motor driving terminals, by more than 2 volts. This means, that if I were to hook up a 9v battery, the motors would only see about 7 volts. And I am not even talking about the loss in current!! 
+
+So, this driver is inefficient. Oh well!
+
+For the main power source, I needed a battery that could provide a lot of power. However, I didn't have a rechargable battery. I tried 9v batteris, 2 9v batteries. and even some cheap NiCds. But I eventually found that the best results are with 3 9v batteries in series. Producing a total of 27 volts. Now I don't exactly know what this did the the 6v rated motors, but it was enough to provide the current needed for the robot. But only for a short amount of time, like 5-10 tests and then it was done. 
+
+For the main frame, I went to CAD... NOOO. I was broke back then and didn't have a 3D printer. So I built the frame from cardboard cut with my 5 dollar scissors and barbecue skewers. I wanted a 2 'story' build where the battery and IMU would go on the top. Ideally the most mass should go on the top, since this is essentially an inverted pendulum. And the more mass an object has, the more inertia it has. So, the robot would have more time to react and stabilize it's own weight, if most of the weight was on top. 
+
+In the end, I sketch-up something like this:
+
+
+
