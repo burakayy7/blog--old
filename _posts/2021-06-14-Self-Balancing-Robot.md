@@ -36,7 +36,7 @@ Here is how I implemented a PID controller:
 
 First, you need to get your error. Like let's say an angle of 0 is the target, but we read 10 degrees. Then the error is 10 degrees. Here is the code for getting all the terms in PID, which I will explain later:
 
-```
+```C++
 rollErrorOld = rollError; //get the old rollError
 rollError = rollTarget-rollActual; //get the current rollError
 rollErrorChange = rollError-rollErrorOld; //get the change in the rollError; our newError minus the oldError = change in Error
