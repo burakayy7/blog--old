@@ -36,14 +36,14 @@ Here is how I implemented a PID controller:
 
 First, you need to get your error. Like let's say an angle of 0 is the target, but we read 10 degrees. Then the error is 10 degrees. Here is the code for getting all the terms in PID, which I will explain later:
 
-```cpp
+~~~cpp
 rollErrorOld = rollError; //get the old rollError
 rollError = rollTarget-rollActual; //get the current rollError
 rollErrorChange = rollError-rollErrorOld; //get the change in the rollError; our newError minus the oldError = change in Error
 rollErrorSlope = rollErrorChange/dt; //get the slope of our error; the change in error over the chaneg in time is the 'slope' of the error 'line' if the y-axis is error and the x-axis is time
 rollErrorArea = rollErrorArea+rollError*dt; //the area under the curve between the error curve and the x-axis
 
-```
+~~~
 
 And all of these should be the same for pitch, just the variable names change. 
 
