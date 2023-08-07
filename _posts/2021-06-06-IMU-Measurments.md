@@ -15,7 +15,7 @@ I first started on a bunch of online tutorials on how to use this and I got the 
 
 Here is a short piece of code that will do the basic readings from the MPU6050 \(also make sure you hooked up the sensor correclty, search it up\):
 
-```C++
+```cpp
 #include <MPU6050.h>
 
 
@@ -88,7 +88,7 @@ To learn how to do this, I wathced Paul McWhorter's IMU [lessons](https://www.yo
 
 Here is the code: 
 
-```C++
+```cpp
 #include <MPU6050.h>
 
 #include<Wire.h>
@@ -199,7 +199,7 @@ So, we have to apply a low pass filter to the accelerometer values and a high pa
 
 This line of code should accomplish the filter:
 
-```C++
+```cpp
 theta=(theta+gyr.y()*dt)*.95+thetaM*.05;
 ```
 
@@ -217,7 +217,7 @@ Finally, for the quaternions. Now this math is heavy and I don't completely unde
 
 But, to get quaternions from the BNO055 is easy:
 
-```C++
+```cpp
 uint8_t system, gyro, accel, mg = 0;
 myIMU.getCalibration(&system, &gyro, &accel, &mg);
 
