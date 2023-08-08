@@ -17,7 +17,7 @@ So what **exactly** are PID controllers?
 
 Well, let's start off with the proportional part:
 
-As you might of thought, this part produces a value **proportional** to the error. For example: let's assume we are making a drone. And the orientation sensor detects that we are tilting by 20 degrees. And let's say that the P Value (or the Proportional Value) is 0.5. Then the output of the P part will be 20*0.5 which is 10 degrees. If our error was 90 degrees, then the P Value would be 45 degrees. Essentially, the output is proportional to the error with respect to the P Value. However, this alone isn't very affective in the real world. Because in the real world there is momentum. Which means our system will overshoot, which causes oscillations in the system. 
+As you might of thought, this part produces a value **proportional** to the error. For example: let's assume we are making a drone. And the orientation sensor detects that we are tilting by 20 degrees. And let's say that the P Value (or the Proportional Value) is 0.5. Then the output of the P part will be -20*0.5 which is 10 degrees. We sya negative, because our target value, which is 0 minus our error is a negative value. If our error was 90 degrees, then the P Value would be -45 degrees. Essentially, the output is proportional to the error with respect to the P Value. However, this alone isn't very affective in the real world. Because in the real world there is momentum. Which means our system will overshoot, which causes oscillations in the system. 
 
 Next, what does the Integral Part mean. And to better understand why this is important, let's first know why the Derivative term is there.
 
