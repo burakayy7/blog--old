@@ -49,4 +49,8 @@ And all of these should be the same for pitch, just the variable names change.
 
 But what is PID?
 
+Well, I explained that in [this blog post](https://burakayy.com/blog/What-is-PID). You should go check it out!
+
+
+
 
