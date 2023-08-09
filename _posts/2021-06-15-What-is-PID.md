@@ -53,7 +53,7 @@ If you want more resources:
 
 [wiki](https://en.wikipedia.org/wiki/PID_controller)
 
-[McWhoter](https://www.youtube.com/watch?v=t7ImNDOQIzM&list=PLGs0VKk2DiYwEo-k0mjIkWXlkrJWAU4L9&index=26)
+[McWhorter](https://www.youtube.com/watch?v=t7ImNDOQIzM&list=PLGs0VKk2DiYwEo-k0mjIkWXlkrJWAU4L9&index=26)
 
 
 Hope you learned something!!
