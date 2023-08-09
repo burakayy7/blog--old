@@ -38,7 +38,23 @@ pitchErrorArea=pitchErrorArea+(pitchError*dt);
 
 And if you've noticed, this is actually the area of a rectangle, where the length is the time intevral and the height is the error. And you've probably also noticed that this doesn't always match up with the actual graph, but it's a pretty good approximation.
 
-Now, this is when the I term is useful:
+Now, this is when the Integral term is useful:
 
+Let's go back to the graph. Our system without the Integral term is pretty good, but it isn't affective at long term stuff. Like when our error is really close to the target, but isn't actually equal to it, and over time, this makes a difference. So as a solution, we take the area of the part between our target and the graph, and add them up over time (this is called Integrating) to get our current area. And we divide this area by a sufficiently large number (or multiply this area by a sufficiently small number, like 0.0001, which is our Integral part) which we then add to our correcting value; which will over time be making small adjustments to get us closer to our target. And that completes our PID system.
+
+If you want a visual:
+
+[PID Contoller block diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/PID_en.svg/400px-PID_en.svg.png)
+
+
+Also, depending on the system, you will need to play around with the P, I, and D values to perfectly tune it to your specific system. This takes lots of trial and error, but is definetly worth it!
+
+If you want more resources:
+
+[wiki](https://en.wikipedia.org/wiki/PID_controller)
+[McWhoter](https://www.youtube.com/watch?v=t7ImNDOQIzM&list=PLGs0VKk2DiYwEo-k0mjIkWXlkrJWAU4L9&index=26)
+
+
+Hope you learned something!!
 
 
