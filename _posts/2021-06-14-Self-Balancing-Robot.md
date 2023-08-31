@@ -29,7 +29,7 @@ and the dimensions:
 
 ![](assets/images/sbrDim.jpg)
 
-In order to control the robot, it needs to know it's orientation, more specifically it's tilt. So, we can use a sensor called an Inertial Measurment Unit (IMU for short). 6-axis IMUs have a 3 axis accelerometer and a 3 axis gyroscope. We can use these and some math to get our rotation in Eular angles. However, this is usually sensative to vibration and gimble lock. So instead we can use something called Quaternions. Quaternions are the numbers that extend the complex numbers and can define 3 dimensional rotations with 4 numbers. However, most IMU's don't have quaternions. So, I used the BNO055 IMU and I explain how to get these measurments in [this](https://burakayy.com/blog/IMU-Measurments).
+In order to control the robot, it needs to know it's orientation, more specifically it's tilt. So, we can use a sensor called an Inertial Measurment Unit (IMU for short). 6-axis IMUs have a 3 axis accelerometer and a 3 axis gyroscope. We can use these and some math to get our rotation in Eular angles. However, this is usually sensative to vibration and gimble lock. So instead we can use something called Quaternions. Quaternions are the numbers that extend the complex numbers and can define 3 dimensional rotations with 4 numbers. However, most IMU's don't have quaternions. So, I used the BNO055 IMU and I explain how to get these measurments in [this blog post](https://burakayy.com/blog/IMU-Measurments). Please go check that out and come back here when you feel ready.
 
 Once the Eular angles are achieved, we need a way to control this. After some research, I chose the PID controller to control my robot. I learned how to implement this in Paul McWhorter's [IMU class](https://www.youtube.com/watch?v=t7ImNDOQIzM&list=PLGs0VKk2DiYwEo-k0mjIkWXlkrJWAU4L9&index=26).
 
@@ -52,5 +52,9 @@ But what is PID?
 
 Well, I explained that in [this blog post](https://burakayy.com/blog/What-is-PID). You should go check it out, and come back here when you feel confident on PID controllers.
 
-Now that we know what a PID controller is and how it works, let's see how this will help control our robot. 
+Now that we know what a PID controller is and how it works, let's see how this will help control our robot. The algorithm calculates our current error in degrees and the PID contoller outputs a number accordingly to out input. And we need to use that output value to control our motors. Since our input is in degrees, our output will also be in degrees. But the cheap DC motors don't accept values in "degrees". You can only apply a voltage or a PWM signal to the motors. 
+
+So a decent engineer would create a function that maps degrees to the motor's rotation and speed, and use that function to control the motors. However, 13 year old me was too lazy and directly multiplied the degrees by a combonation of numbers to directly control the motors. 
+
+This was probably a major reason to as why the robot didn't succeed. 
 
