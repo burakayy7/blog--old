@@ -17,4 +17,12 @@ The second way bicycles balance are because of how the handle bars are located o
 
 See bikes are essentially inverted pendulums. 
 
-Imagine 
+Imagine trying to balance a broom stick on your hand. To get it to move forward, you can't just simply move forward. Instead, you have to first move back a bit (causing the broom to fall forward) and then start walking with the broom. 
+
+This is the same concept in bicycles. 
+
+For more information, watch this video: [Veritasium](https://www.youtube.com/watch?v=9cNmUNHSBac)
+
+The third reason why bikes are stable is because of gyroscopic precision from the spinning wheels. Basically, when the wheels are spinning at a certain speed the force applied to them from the imbalance is redirected 90 degrees causing the bike to self level. But this is a very small amount. Bikes are stable mostly because of the first 2 reasons. 
+
+And that's it. Hope you enjoyed my catch up on my project.
