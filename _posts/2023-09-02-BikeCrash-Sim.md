@@ -13,7 +13,7 @@ But here is the thing: bicycle stability. See, bicycles are naturally stable. Th
 
 The forcing acting on the wheel/ground creates a equal force on the wheel, causing the bike's wheel to rotate the second it becomes unstable. Becuase then the force from the ground won't be directly vertically up, it will be slightly off when it's off balance; causing the front wheel to rotate.
 
-The second way bicycles balance are because of how the handle bars are located on the bike. In the picture above, you can see that the handle bars are in front of both the axis and the point which the wheel touch the ground. When the bike tilts, the weight from the handle bars cause the front wheel to rotate in the direction of tilt essentially "pulling" the bike under itself.
+The second way bicycles balance are because of how the handle bars are located on the bike. In bicycles, the handle bars are usually infront of the contact point to the ground. When the bike tilts, the weight from the handle bars causes the front wheel to rotate in the direction of tilt essentially "pulling" the bike under itself.
 
 See bikes are essentially inverted pendulums. 
 
