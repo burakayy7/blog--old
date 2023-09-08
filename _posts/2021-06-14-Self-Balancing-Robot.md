@@ -52,9 +52,15 @@ But what is PID?
 
 Well, I explained that in [this blog post](https://burakayy.com/blog/What-is-PID). You should go check it out, and come back here when you feel confident on PID controllers.
 
-Now that we know what a PID controller is and how it works, let's see how this will help control our robot. The algorithm calculates our current error in degrees and the PID contoller outputs a number accordingly to out input. And we need to use that output value to control our motors. Since our input is in degrees, our output will also be in degrees. But the cheap DC motors don't accept values in "degrees". You can only apply a voltage or a PWM signal to the motors. 
+Now that we know what a PID controller is and how it works, let's see how this will help control our robot. The algorithm calculates our current error in degrees and the PID contoller outputs a number accordingly to the input. And we need to use that output value to control our motors. Since our input is in degrees, our output will also be in degrees. But the cheap DC motors don't accept values in "degrees". You can only apply a voltage or a PWM signal to the motors. 
 
 So a decent engineer would create a function that maps degrees to the motor's rotation and speed, and use that function to control the motors. However, 13 year old me was too lazy and directly multiplied the degrees by a combonation of numbers to directly control the motors. 
 
 This was probably a major reason to as why the robot didn't succeed. 
+
+Instead what I did was use the output by the controller and scale them for PWM and use that to control the motors. Also, I would change the direction of the spin according to the sign of the PID output. And I hoped that this would be enough to achieve maybe a few seconds of self-stabilization. And I was close.
+
+
+
+
 
