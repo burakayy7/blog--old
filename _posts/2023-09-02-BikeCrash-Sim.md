@@ -1,5 +1,6 @@
 ---
 navigation: true
+cover: '[assets/images/waves.jpg](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDzm8y2z5n1n6xrrO4e1ZFBPe2B9vJGAYaOw6h_T-Qon6UY9sjOuwEJjDi0_R7R4ef8ow:https://www.science.org/cms/10.1126/science.1201959/asset/961bea51-486c-4664-bc95-c0258d30e16d/assets/graphic/332_339_f1.jpeg&usqp=CAU)'
 title: BikeCrash Test/Sim
 date: 2023-09-02
 class: post-template
