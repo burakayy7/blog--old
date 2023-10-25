@@ -58,7 +58,15 @@ So a decent engineer would create a function that maps degrees to the motor's ro
 
 This was probably a major reason to as why the robot didn't succeed. 
 
-Instead what I did was use the output by the controller and scale them for PWM and use that to control the motors. Also, I would change the direction of the spin according to the sign of the PID output. And I hoped that this would be enough to achieve maybe a few seconds of self-stabilization. And I was close.
+Instead what I did was use the output by the controller and scale them for PWM and use that to control the motors. Also, I would change the direction of the spin according to the sign of the PID output. And I hoped that this would be enough to achieve maybe a few seconds of self-stabilization. And I was close, I got the robot to stand upright, balancing, for a few seconds, then it would fall. This was partly due to the usb cable being attached to the robot because I didn't have a good way to power the Arduino and the motor driver. 
+
+If you want to watch a short video of it in action:
+
+
+
+Another reason to as why it didn't work is due to the poor structure of the robot. If you make a robot out of cardboard and hot glue it together with barbaque skewers, you're going to get something very inperfect. And when the robot is trying to balance, it will cause oscillations. These oscillations in some cases can be dampened with the PID controller, but in this case, it was a gonner. 
+
+After I accomplished a few seconds of balancing after days of hard work, I felt like I should call this a success and blame the failures on the poor quality of equipment. 
 
 
 
