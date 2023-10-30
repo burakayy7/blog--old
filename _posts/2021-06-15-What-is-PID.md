@@ -1,6 +1,7 @@
 ---
 navigation: true
 title: "What is PID?"
+cover: (https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/PID_en.svg/400px-PID_en.svg.png)
 date: 2021-06-15
 class: post-template
 ---
