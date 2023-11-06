@@ -1,6 +1,6 @@
 ---
 navigation: true
-cover: assets/images/mainUnit1.jpg
+cover: 'assets/images/mainUnit1.jpg'
 title: NeuralBike Update
 date: 2023-11-06
 class: post-template
