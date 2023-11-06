@@ -12,6 +12,6 @@ The design is somewhat simple. On the top there's the Particle Boron LTE (which 
 
 Here is a picture if you want to see how the final product turned out:
 
-![The main pcb]('assets/images/mainUnit2.jpg')
+![The main pcb](assets/images/mainUnit2.jpg)
 
 
