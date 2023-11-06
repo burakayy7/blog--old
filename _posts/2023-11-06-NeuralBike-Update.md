@@ -1,6 +1,6 @@
 ---
 navigation: true
-cover: assets/images/mainUnit2.jpg.jpg
+cover: assets/images/mainUnit1.jpg
 title: NeuralBike Update
 date: 2023-11-06
 class: post-template
@@ -12,6 +12,6 @@ The design is somewhat simple. On the top there's the Particle Boron LTE (which 
 
 Here is a picture if you want to see how the final product turned out:
 
-![The main pcb](assets/images/mainUnit1.jpg.jpg)
+![The main pcb](assets/images/mainUnit2.jpg)
 
 
