@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assests/images/td2.jpg
+cover: assets/images/td2.jpg
 navigation: true
 title: "Project Touch Delay"
 date: 2021-03-24
