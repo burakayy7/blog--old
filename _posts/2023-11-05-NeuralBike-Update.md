@@ -18,4 +18,4 @@ Here is a picture if you want to see how the final product turned out:
 
 Now I need a good case to put this in. I finally ended up with this design:
 
-(You can view the deisgn in Onshape(the tool I used to design it))[https://cad.onshape.com/documents/1df18ac347a74cac98dfa207/w/4d75f3240e6fd7c24029e563/e/14ce5f3b6cddb572a7779c39?renderMode=0&uiState=654a8f6bdce69c30eab54bf9]
+(You can view the deisgn in Onshape)[https://cad.onshape.com/documents/1df18ac347a74cac98dfa207/w/4d75f3240e6fd7c24029e563/e/14ce5f3b6cddb572a7779c39?renderMode=0&uiState=654a8f6bdce69c30eab54bf9]
