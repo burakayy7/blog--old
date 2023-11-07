@@ -10,6 +10,8 @@ Today I finally found the time to finish the pcb of the main controller for the 
 
 The design is somewhat simple. On the top there's the Particle Boron LTE (which will be running inference) and there's also the MPU6050 (the IMU used to collect acceleromter data). But we also need to store that data so on the bottom there's a SD Card Module. This module runs on 5 volts but the Particle Boron runs on 3.3 volts, so to make them compatible, I shorted the input and the output of the voltage converter on the module so that it can run on 3.3 volts. 
 
+On the Boron, the 12c Pins for the MPU6050 has its own dedicated pins (unlike Arduino related microcontrollers). Also, for the SPI pins for the SD card module, the Boron also has it's own MISO/MOSI (D11/D12 respectively) plus its own SCK pin (D13). Now, for the CS pin, the default is A5, so that's what I used.
+
 Here is a picture if you want to see how the final product turned out:
 
 ![The main pcb](assets/images/mainUnit2.jpg)
