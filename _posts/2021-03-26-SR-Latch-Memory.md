@@ -1,5 +1,6 @@
 ---
 navigation: true
+cover: assets/images/sr1.jpg
 title: "SR latch Memory"
 date: 2021-03-26
 class: post-template
