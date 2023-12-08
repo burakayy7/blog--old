@@ -2,7 +2,7 @@
 navigation: true
 title: "Raspberry Pi Cam PanTilt"
 date: 2023-07-22
-cover: 'assets/images/PiCamImg/final.jpg'
+cover: 'assets/images/piCamImg/final.jpg'
 class: post-template
 ---
 
