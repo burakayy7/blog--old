@@ -185,7 +185,7 @@ Yikes!!
 
 Even though I am pretty good at AoPS, this book is not 8th/9th grade friendly. I quickly tried to learn some Linear ALgebra then gave this book a try. And I got somewhere, but not enought to implement a Kalman Filter, so I put this book on hold until I had gained some knowledge. 
 
-For refrence, this Kalman thing happened in the beginning of 2022, so in my 9th grade year. However, everything from quaternions and other algorithms happened a **year before** this Kalman stuff. So I am kind of kumping around the time line here, for you sake.
+For refrence, this Kalman thing happened in the beginning of 2022, so in my 9th grade year. However, everything from quaternions and other algorithms happened a **year before** this Kalman stuff. So I am kind of jumping around the time line here, for you sake.
 
 But, back to the 8th grade:
 
