@@ -159,7 +159,7 @@ Serial.println(phiG);
 
 It works by looking at the angular velocity \(what the gyro outputs\) in a time period \(in milliseconds\) and with simple math converts that to angles. 
 
-But if you were to run the code, you will see that even if we don't apply any rotation on the device, the ouptut line will have a positive slope. Meaning that it thinks we are rotating at a constant velocity, even if we aren't. This phenomenon is known as gyro drift. Because the value is drifting off. This happens becuase we are also integrating the gyro's inperfections, like noise. And over time, these errors add ip, causing unwanted drift. 
+But if you were to run the code, you will see that even if we don't apply any rotation on the device, the ouptut line will have a positive slope. Meaning that it thinks we are rotating at a constant velocity, even if we aren't. This phenomenon is known as gyro drift. Because the value is drifting off. This happens becuase we are also integrating the gyro's inperfections, like noise. And over time, these errors add up, causing unwanted drift. 
 
 At this point, I had realized that the BNO055 9-axis IMU is much higher quality than the MPU6050. It's also what Mr. McWhorter uses. 
 So I ordered and hooked it up to my Arduino Nano, and this time, fully followed his tutorials. 
