@@ -13,7 +13,8 @@ Linear Regressions are brought up in the context of tring to find a line that be
 
 For example, lets say we wanted to find the line which best represents this graph:
 
-```python
+~~~python
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import random
@@ -22,7 +23,7 @@ y = [3*i-5 for i in x]
 y = [i+(random.random()*250) for i in y]
 df = pd.DataFrame({'a1': x, 'a2': y})
 plt.scatter(df.a1, df.a2, color="black")
-```
+~~~
 ![image](https://github.com/burakayy7/blog/assets/120507146/2188ce3a-3389-4903-a13c-547e5c2bd87e)
 
 
