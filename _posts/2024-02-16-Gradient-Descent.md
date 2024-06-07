@@ -13,7 +13,7 @@ Linear Regressions are brought up in the context of tring to find a line that be
 
 For example, lets say we wanted to find the line which best represents this graph:
 
-```
+```python
 import pandas as pd
 import matplotlib.pyplot as plt
 import random
