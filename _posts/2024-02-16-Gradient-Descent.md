@@ -97,6 +97,10 @@ The first thing we wish to know, is how much our error will change with a small 
 
 And this is when something called [Derivative](https://en.wikipedia.org/wiki/Derivative) comes in. 
 
-Now I wish I could go into great detail on how a derivative works and the theory behind it, but this post is already getting wordy, so reach out and let me know if you would like a seperate post on derivatives. 
+_Now I wish I could go into great detail on how a derivative works and the theory behind it, but this post is already getting wordy, so reach out and let me know if you would like a seperate post on derivatives._
+
+So essentially, what we are doing with the partial derivatives, is we are trying to calculate the slope of our cost function at a given point with respect to one of the variables, like either m or b (this is actually close to the definition of a partial derivative. We simply wish to know  
+
+
 
 
