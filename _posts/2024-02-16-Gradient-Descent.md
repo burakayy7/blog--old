@@ -152,3 +152,12 @@ Now for simplisicty sake, I want you to imagine this: let's say we graphed our c
 So here is a super quick sketch:
 
 ![](assets/images/Gradient/gd.png)
+
+Now all we have to do is adjust m and b in the opposite direction of the steepness, which we do by subtracting our gradient times some _learning rate_. All the learning rate does, is it scales the amount which we will adjust m and b to a much smaller value so we don't make big jumps; we make small, incremental, adjustments. But this is just another parameter you can adjust for your problem.
+
+$$
+m = m - \alpha \cdot \frac{\partial \text{error}}{\partial m}
+
+b = b - \alpha \cdot \frac{\partial \text{error}}{\partial b}
+$$
+
