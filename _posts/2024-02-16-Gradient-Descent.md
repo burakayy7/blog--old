@@ -57,7 +57,7 @@ So imagine we know the real value, say y_real. Then from some equation we get a 
 ```
 error = y_real - y_cal
 ```
-However, what if over time we got a bunch of negative and positive error values that when summed up (which will happen in our MeanSquaredError function because we will calculate the error across the entire dataset at once) would result in a value close to 0 (the positive and negaitves would cancel)? This is where the _squared_ term comes in. By squaring the error value, we eliminate the posability of a negative value.
+However, what if over time we got a bunch of negative and positive error values that when summed up (which will happen in our MeanSquaredError function because we will calculate the error across the entire dataset at once) would result in a value close to zero (the positive and negaitves would cancel)? This is where the _squared_ term comes in. By squaring the error value, we eliminate the posability of a negative value.
 ```python
 error = (y_real - y_cal)**2
 ```
