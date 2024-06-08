@@ -1,6 +1,6 @@
 ---
 navigation: true
-cover: ![](https://github.com/burakayy7/blog/assets/120507146/9e45a485-6010-4d45-8113-2335d249d70f)
+cover: https://github.com/burakayy7/blog/assets/120507146/9e45a485-6010-4d45-8113-2335d249d70f
 title: Gradient Descent & Linear Regression
 date: 2024-02-16
 class: post-template
