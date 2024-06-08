@@ -9,12 +9,12 @@ In this post I will be introducing the math behind Gradient Descent and how it w
 
 I was first introduced to Gradient Descent when I had to implement autoregressive models from scratch. To learn this, I first tried to implement a Linear Regression. 
 
-Linear Regressions are brought up in the context of tring to find a line that best fits the trend of a data set.
+
 **Disclaimer: I will be using Python code in this tutorial found in my [repo](https://github.com/burakayy7/LinearRegression).**
 
 Please follow along, I think it helps to see an example. Or better yet, create your own script by using the code in this post. 
 
-
+Linear Regressions are brought up in the context of tring to find a line that best fits the trend of a data set.
 For example, lets say we wanted to find the line which best represents this graph:
 
 ~~~python
