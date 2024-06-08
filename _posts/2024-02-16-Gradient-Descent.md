@@ -163,6 +163,8 @@ $$
 \text{b} = \text{b} - \alpha \cdot \frac{\partial \text{error}}{\partial b}
 $$
 
+Here, $\alpha$  is my learning rate, and in the code below, it's set to 0.0001
+
 So here is my Python function for doing this Gradient Descent:
 
 ```python
