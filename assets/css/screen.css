@@ -579,7 +579,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
     justify-content: center;
     align-items: center;
     color: var(--midgrey);
-    font-size: 1.4rem;
+    font-size: 2.4rem; /*from 1.4*/
     font-weight: 600;
     text-transform: uppercase;
 }
