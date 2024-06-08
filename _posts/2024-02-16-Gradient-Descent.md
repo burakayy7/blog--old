@@ -194,6 +194,8 @@ epoch = 200
 for i in range(epoch):
   m, b = gradient_descent(m, b, df, L)
 ```
+Here, I set the epochs (which is how many times we update m and b) to 200. You can play around with these values (epoch and L), they are the hyperparameters.
+
 
 In each epoch, we update m and b, and re-run our algorithm; each time getting closer and closer to the actual m and b values. 
 
