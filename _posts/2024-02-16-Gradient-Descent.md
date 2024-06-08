@@ -93,4 +93,10 @@ $$
 $$
 
 
-The first thing we wish to know, is how much our error will change with a small change in m. Then according to that value, we will adjust m to reduce 
+The first thing we wish to know, is how much our error will change with a small change in m. Then according to that value, we will adjust m to reduce our error. We then repeat this process for m and b.
+
+And this is when something called [Derivative](https://en.wikipedia.org/wiki/Derivative) comes in. 
+
+Now I wish I could go into great detail on how a derivative works and the theory behind it, but this post is already getting wordy, so reach out and let me know if you would like a seperate post on derivatives. 
+
+
