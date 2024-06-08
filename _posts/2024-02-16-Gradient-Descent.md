@@ -88,5 +88,9 @@ The underlining goal in the Linear Regression algorithm is to modify the weights
 So let's observe our cost function:
 
 
-$$\left(error) \eq \sum_{i=0^n (y_i - (m*x_i + b)^2$$
+$$
+\text{error} = \sum_{i=0}^n (y_i - (m \cdot x_i + b))^2
+$$
 
+
+The first thing we wish to know, is how much our error will change with a small change in m. Then according to that value, we will adjust m to reduce 
