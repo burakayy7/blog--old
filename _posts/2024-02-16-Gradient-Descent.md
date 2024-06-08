@@ -38,7 +38,7 @@ So all we have to do is find the appropriate values for m and b. While we could 
 1. Start with an initial line equation
 2. Calculate how far you are from the expected value when you plug in a point, using the current m and b.
 3. Then slightly adjust m and b in the _direction_ which will get us _closer_ to the expected value
-4. Repeat steps 2 and 3 until a specified amount
+4. Repeat steps 2 and 3 for a specified amount (this is referred to as the epoch size)
 
 
 First, start off with a random set of m (this is often referred to as the weight because is has a scaling affect) and b (which is referred to as the bias because it will shift, or apply a bias, to our line). For simplisity sake, we can also start off with m and b equaling zero.
@@ -59,10 +59,29 @@ However, what if over time we got a bunch of negative and positive error values 
 ```python
 error = (y_real - y_cal)**2
 ```
+Next, we wish to know the error across the entire dataset, so the somewhat obvious method might be to take the average of all the errors between every point, this is the _mean_ term.
 
+So now our algorithm is something like this:
+```python
+def mean_squared_error(m, b, points):
+  total_error = 0
+  for i in range (len(points)):
+    x_i = points.iloc[i].a1
+    y_i = points.iloc[i].a2
+    total_error += (y_i - (m*x_i+b))**2
+  total_error/float(len(points))
+```
+Here _points_ is a [Pandas DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html) and I just access the x and y compoenents. and when calculating the error, I just simply calculate the value on the spot with ```total_error += (y_i - (m*x_i+b))**2``` adding it to a variable to then take the average.
+
+Easy enough? If not, here is another resource: [for help](https://statisticsbyjim.com/regression/mean-squared-error-mse/)
+
+Once we know our error, we wish to know how much we should adjust m and b according to this value. If we have a big error, maybe we should make a big change, but if it's small, a tiny change might be sufficient. 
 This is when Gradient Descent comes in.
 
 The underlining goal in the Linear Regression algorithm is to modify the weights and biases in such a way, that we get closer to our goal. But the question remains: How do we know how much we want to modify each value? 
-To solve this, we first need to know how much our 
+
+### How does Gradient Descent Work
+
+
 
 
