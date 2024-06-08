@@ -195,3 +195,19 @@ for i in range(epoch):
   m, b = gradient_descent(m, b, df, L)
 ```
 
+In each epoch, we update m and b, and re-run our algorithm; each time getting closer and closer to the actual m and b values. 
+
+If you went to the [repo](https://github.com/burakayy7/LinearRegression) and ran the cell, you should see something like this:
+
+![](https://github.com/burakayy7/blog/assets/120507146/a1b84c1c-0eb2-4d25-adc1-aad4c1fd70bc)
+
+And if you print out the m and b values, you should get something close to 
+
+$$
+\text{m} = 3.074
+$$
+$$
+\text{b} = 4.314
+$$
+
+Which is really close to our actual m and b, which was defined as m = 3 and b = 5.
