@@ -10,7 +10,7 @@ In this post I will be introducing the math behind Gradient Descent and how it w
 I was first introduced to Gradient Descent when I had to implement autoregressive models from scratch. To learn this, I first tried to implement a Linear Regression. 
 
 Linear Regressions are brought up in the context of tring to find a line that best fits the trend of a data set.
-Disclaimer: I will be using Python code in this tutorial found in this [repo](https://github.com/burakayy7/LinearRegression)
+Disclaimer: I will be using Python code in this tutorial found in this [repo](https://github.com/burakayy7/LinearRegression). Please follow along, I think it helps to see an example. Or better yet, create your own script by using the code in this post. 
 
 
 For example, lets say we wanted to find the line which best represents this graph:
@@ -55,7 +55,10 @@ So imagine we know the real value, say y_real. Then from some equation we get a 
 ```
 error = y_real - y_cal
 ```
-
+However, what if over time we got a bunch of negative and positive error values that when summed up (which will happen in our MeanSquaredError function because we will calculate the error across the entire dataset at once) would result in a value close to 0 (the positive and negaitves would cancel)? This is where the _squared_ term comes in. By squaring the error value, we eliminate the posability of a negative value.
+```python
+error = (y_real - y_cal)**2
+```
 
 This is when Gradient Descent comes in.
 
