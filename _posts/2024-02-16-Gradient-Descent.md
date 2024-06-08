@@ -115,6 +115,9 @@ $$
 $$
 
 
+(notice how these are very similar to slope equations, can you see why?)
+
+
 which becomes
 
 $$
