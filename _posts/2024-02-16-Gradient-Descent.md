@@ -105,13 +105,26 @@ So essentially, what we are doing with the partial derivatives, is we are trying
 And to do this (again, I won't be going in-depth on partial derivatives in this tutorial) we are going to treat every variable other than the one we are interested in as a constant. 
 
 $$
-\frac{\partial \text{error}}{\partial x} = 
+\frac{\partial \text{error}}{\partial m} = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}
+$$
+
+and
+
+$$
+\frac{\partial \text{error}}{\partial b} = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}
 $$
 
 
+which becomes
+
 $$
-\lim_{h \to 0} \frac{f(x + h, y) - f(x, y)}{h}
+\frac{\partial \text{error}}{\partial m} = \lim_{h \to 0} \frac{(\sum_{i=0}^n (y_i - ((m+h) \cdot x_i + b))^2) - (\sum_{i=0}^n (y_i - (m \cdot x_i + b))^2)}{h}
 $$
+
+$$
+\frac{\partial \text{error}}{\partial b} = \lim_{h \to 0} \frac{(\sum_{i=0}^n (y_i - (m \cdot x_i + (b+h)))^2) - (\sum_{i=0}^n (y_i - (m \cdot x_i + b))^2)}{h}
+$$
+
 
 
 
