@@ -32,7 +32,12 @@ y = mx + b
 ```
 So all we have to do is find the appropriate values for m and b. While we could go the trial-and-error method and try a bunch of values until the result _looks right_, we could also have a computer automate that process for us. 
 
-Here is how the Linear Regression Algorithm works:
+###Here is how the Linear Regression Algorithm works:
+1. Start with an initial line equation
+2. Calculate how far you are from the expected value when you plug in a point, using the current m and b.
+3. Then slightly adjust m and b in the _direction_ which will get us _closer_ to the expected value
+4. Repeat steps 2 and 3 until a specified amount
+
 
 First, start off with a random set of m (this is often referred to as the weight because is has a scaling affect) and b (which is referred to as the bias because it will shift, or apply a bias, to our line). For simplisity sake, we can also start off with m and b equaling zero.
 
@@ -40,6 +45,9 @@ First, start off with a random set of m (this is often referred to as the weight
 m = 0
 b = 0
 ```
-Then we take our first point in the data set and take the gradient.
+Then we take our first point in the data set and plug it into our line equation. This should give us an output value. We can compare this with the expected value (since we know the point) by finding the error. Now, there are a variety of different error functions (referred to as the cost function, can you see why?) which can be used, and it will depend on your system. But for simplicity sake, I have chosen the _Mean Squared Error_ cost function.  This is when Gradient Descent comes in.
+
+The underlining goal in the Linear Regression algorithm is to modify the weights and biases in such a way, that we get closer to our goal. But the question remains: How do we know how much we want to modify each value? 
+To solve this, we first need to know how much our 
 
 
