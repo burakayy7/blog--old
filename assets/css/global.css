@@ -8,9 +8,9 @@
     --purple: #ad26b4;
     --yellow: #fecd35;
     --red: #f05230;
-    --darkgrey: #15171A;
-    --midgrey: #738a94;
-    --lightgrey: #c5d2d9;
+    --darkgrey: #0d0e0e; /*from #15171A*/
+    --midgrey: #424648; /*from #738a94*/
+    --lightgrey: #888f92; /*from #c5d2d9*/
     --whitegrey: #e5eff5;
     --pink: #fa3a57;
     --brown: #a3821a;
