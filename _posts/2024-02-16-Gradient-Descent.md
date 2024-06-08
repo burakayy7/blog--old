@@ -26,4 +26,20 @@ plt.scatter(df.a1, df.a2, color="black")
 ~~~
 ![image](https://github.com/burakayy7/blog/assets/120507146/2188ce3a-3389-4903-a13c-547e5c2bd87e)
 
+Well, we know that the final equation will look something like this:
+```
+y = mx + b
+```
+So all we have to do is find the appropriate values for m and b. While we could go the trial-and-error method and try a bunch of values until the result _looks right_, we could also have a computer automate that process for us. 
+
+Here is how the Linear Regression Algorithm works:
+
+First, start off with a random set of m (this is often referred to as the weight because is has a scaling affect) and b (which is referred to as the bias because it will shift, or apply a bias, to our line). For simplisity sake, we can also start off with m and b equaling zero.
+
+```python
+m = 0
+b = 0
+```
+Then we take our first point in the data set and take the gradient.
+
 
