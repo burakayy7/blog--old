@@ -95,7 +95,7 @@ production stylesheet in assets/built/screen.css
 /* Every post, on every page, gets this style on its <article> tag */
 .pagination {
     padding-top: 4rem;
-    border-top: #bfc8cd 1px solid;
+    border-top: #7e8386 1px solid; /*changed from #bfc8cd*/
     word-wrap: break-word;
 }
 
