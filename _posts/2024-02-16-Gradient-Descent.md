@@ -122,6 +122,7 @@ $$
 $$
 
 
+
 $$
 \frac{\partial \text{error}}{\partial b} = \lim_{h \to 0} \frac{(\sum_{i=0}^n (y_i - (m \cdot x_i + (b+h)))^2) - (\sum_{i=0}^n (y_i - (m \cdot x_i + b))^2)}{h}
 $$
