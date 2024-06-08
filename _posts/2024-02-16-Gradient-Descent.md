@@ -73,7 +73,7 @@ def mean_squared_error(m, b, points):
     total_error += (y_i - (m*x_i+b))**2
   return total_error/float(len(points)) #take the average
 ```
-Here _points_ is a [Pandas DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html) and I just access the x and y compoenents. and when calculating the error, I just simply calculate the value on the spot with ```total_error += (y_i - (m*x_i+b))**2``` adding it to a variable to then take the average.
+Here _points_ is a [Pandas DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html) and I just access the x and y components. and when calculating the error, I just simply calculate the value on the spot with ```total_error += (y_i - (m*x_i+b))**2``` adding it to a variable to then take the average.
 
 Easy enough? If not, here is another resource: [for help](https://statisticsbyjim.com/regression/mean-squared-error-mse/)
 
