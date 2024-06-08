@@ -78,12 +78,15 @@ Here _points_ is a [Pandas DataFrame](https://pandas.pydata.org/docs/reference/a
 Easy enough? If not, here is another resource: [for help](https://statisticsbyjim.com/regression/mean-squared-error-mse/)
 
 Once we know our error, we wish to know how much we should adjust m and b according to this value. If we have a big error, maybe we should make a big change, but if it's small, a tiny change might be sufficient. 
+
 This is when Gradient Descent comes in.
 
 The underlining goal in the Linear Regression algorithm is to modify the weights and biases in such a way, that we get closer to our goal. But the question remains: How do we know how much we want to modify each value? 
 
 ### How does Gradient Descent Work
 
+So let's observe our cost function:
 
 
+$$\left(error) \eq \sum_{i=0^n (y_i - (m*x_i + b)^2$$
 
