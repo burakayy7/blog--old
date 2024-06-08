@@ -161,3 +161,19 @@ m = m - \alpha \cdot \frac{\partial \text{error}}{\partial m}
 b = b - \alpha \cdot \frac{\partial \text{error}}{\partial b}
 $$
 
+So here is my Python function for doing this Gradient Descent:
+
+```python
+def gradient_descent(m_now, b_now, points, L):
+  m_gradient = 0
+  b_gradient = 0
+  n = len(points)
+  for i in range(n):
+    x_i = points.iloc[i].a1
+    y_i = points.iloc[i].a2
+    m_gradient += -(2/n) *x_i*(y_i-(m_now*x_i+b_now))
+    b_gradient += -(2/n) *(y_i-(m_now*x_i+b_now))
+  m = m_now - m_gradient * L
+  b = b_now - b_gradient * L
+  return m, b
+```
