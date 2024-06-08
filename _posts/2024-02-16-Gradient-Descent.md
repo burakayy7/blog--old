@@ -138,4 +138,10 @@ $$
 \frac{\partial \text{error}}{\partial m} = -\frac{2}{n} \cdot \sum_{i=0}^n (y_i \cdot x_i - x_i^2 \cdot m + x_i \cdot b
 $$
 
+and
 
+$$
+\frac{\partial \text{error}}{\partial m} = -\frac{2}{n} \cdot \sum_{i=0}^n (y_i - m \cdot x_i - b
+$$
+
+Voila!
