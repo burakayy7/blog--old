@@ -177,3 +177,17 @@ def gradient_descent(m_now, b_now, points, L):
   b = b_now - b_gradient * L
   return m, b
 ```
+
+
+and this is the code where the Linear Regression and Gradient Descent happens:
+
+```python
+m = 0
+b = 0
+L = 0.0001
+epoch = 200
+
+for i in range(epoch):
+  m, b = gradient_descent(m, b, df, L)
+```
+
