@@ -85,6 +85,7 @@ The underlining goal in the Linear Regression algorithm is to modify the weights
 
 ### How does Gradient Descent Work
 
+
 So let's observe our cost function:
 
 
@@ -93,13 +94,21 @@ $$
 $$
 
 
-The first thing we wish to know, is how much our error will change with a small change in m. Then according to that value, we will adjust m to reduce our error. We then repeat this process for m and b.
+The first thing we wish to know, is how much our error will change with a small change in m. Then according to that value, we will adjust m to reduce our error. We then repeat this process for b.
 
 And this is when something called [Derivative](https://en.wikipedia.org/wiki/Derivative) comes in. 
 
 _Now I wish I could go into great detail on how a derivative works and the theory behind it, but this post is already getting wordy, so reach out and let me know if you would like a seperate post on derivatives._
 
-So essentially, what we are doing with the partial derivatives, is we are trying to calculate the slope of our cost function at a given point with respect to one of the variables, like either m or b (this is actually close to the definition of a partial derivative. We simply wish to know  
+So essentially, what we are doing with the partial derivatives, is we are trying to calculate the slope of our cost function at a given point with respect to one of the variables, like either m or b (this is actually close to the definition of a partial derivative. We simply wish to know the effect on variable will have on the output). 
+
+And to do this (again, I won't be going in-depth on partial derivatives in this tutorial) we are going to treat every variable other than the one we are interested in as a constant. 
+
+$$
+\frac{\partial f}{\partial x}
+$$
+
+
 
 
 
