@@ -211,3 +211,9 @@ $$
 $$
 
 Which is really close to our actual m and b, which was defined as m = 3 and b = 5.
+
+
+
+## Where is Linear Regression Useful
+
+Well, Linear Regression is actually the simpliest Machine Learning model. We actuall created an algorithm that _learns_ a set of variables. This fundamental idea is used in Neural Networks. In fact, each neuron in the network behaves similar to a Linear Regression. Each neuron learns a set of weights and biases, similar to how we leanred a set of m and b. 
