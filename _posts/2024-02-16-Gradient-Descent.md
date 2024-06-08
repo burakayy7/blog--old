@@ -144,3 +144,7 @@ $$
 $$
 
 Voila!
+
+Now we know the effect m and b will have on our error. And all we have to do is adjust m and b in such a way that we will have reduced our error. 
+
+Now for simplisicty sake, I want you to imagine this: let's say we graphed our cost function and we found the slope of the tangent line at a given point (our derivative). We can find the lowest point (or the lowest our cost function is) if we move <u>away</u> from the _steepness_ or the slope. 
