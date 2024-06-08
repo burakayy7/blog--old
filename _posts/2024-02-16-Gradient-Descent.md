@@ -10,6 +10,8 @@ In this post I will be introducing the math behind Gradient Descent and how it w
 I was first introduced to Gradient Descent when I had to implement autoregressive models from scratch. To learn this, I first tried to implement a Linear Regression. 
 
 Linear Regressions are brought up in the context of tring to find a line that best fits the trend of a data set.
+Disclaimer: I will be using Python code in this tutorial found in this [repo](https://github.com/burakayy7/LinearRegression)
+
 
 For example, lets say we wanted to find the line which best represents this graph:
 
@@ -32,7 +34,7 @@ y = mx + b
 ```
 So all we have to do is find the appropriate values for m and b. While we could go the trial-and-error method and try a bunch of values until the result _looks right_, we could also have a computer automate that process for us. 
 
-###Here is how the Linear Regression Algorithm works:
+### Here is how the Linear Regression Algorithm works:
 1. Start with an initial line equation
 2. Calculate how far you are from the expected value when you plug in a point, using the current m and b.
 3. Then slightly adjust m and b in the _direction_ which will get us _closer_ to the expected value
@@ -45,7 +47,17 @@ First, start off with a random set of m (this is often referred to as the weight
 m = 0
 b = 0
 ```
-Then we take our first point in the data set and plug it into our line equation. This should give us an output value. We can compare this with the expected value (since we know the point) by finding the error. Now, there are a variety of different error functions (referred to as the cost function, can you see why?) which can be used, and it will depend on your system. But for simplicity sake, I have chosen the _Mean Squared Error_ cost function.  This is when Gradient Descent comes in.
+Then we take our first point in the data set and plug it into our line equation. This should give us an output value. We can compare this with the expected value (since we know the point) by finding the error. Now, there are a variety of different error functions (referred to as the cost function, can you see why?) which can be used, and it will depend on your system. But for simplicity sake, I have chosen the _Mean Squared Error_ cost function. 
+
+#### How does the Mean Squared Error Cost Function Work
+
+So imagine we know the real value, say y_real. Then from some equation we get a computed value, say y_cal. We wish to know the error between these. The first thing that comes to mind is simply
+```
+error = y_real - y_cal
+```
+
+
+This is when Gradient Descent comes in.
 
 The underlining goal in the Linear Regression algorithm is to modify the weights and biases in such a way, that we get closer to our goal. But the question remains: How do we know how much we want to modify each value? 
 To solve this, we first need to know how much our 
