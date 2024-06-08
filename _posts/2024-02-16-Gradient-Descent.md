@@ -105,11 +105,13 @@ So essentially, what we are doing with the partial derivatives, is we are trying
 And to do this (again, I won't be going in-depth on partial derivatives in this tutorial) we are going to treat every variable other than the one we are interested in as a constant. 
 
 $$
-\frac{\partial f}{\partial x}
+\frac{\partial \text{error}}{\partial x} = 
 $$
 
 
-
+$$
+\lim_{h \to 0} \frac{f(x + h, y) - f(x, y)}{h}
+$$
 
 
 
