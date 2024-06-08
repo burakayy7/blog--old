@@ -157,7 +157,9 @@ Now all we have to do is adjust m and b in the opposite direction of the steepne
 
 $$
 \text{m} = \text{m} - \alpha \cdot \frac{\partial \text{error}}{\partial m}
+$$
 
+$$
 \text{b} = \text{b} - \alpha \cdot \frac{\partial \text{error}}{\partial b}
 $$
 
