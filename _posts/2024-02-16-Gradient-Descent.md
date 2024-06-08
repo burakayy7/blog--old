@@ -118,7 +118,7 @@ $$
 which becomes
 
 $$
-\frac{\partial \text{error}}{\partial m} = \lim_{h \to 0} \frac{(\sum_{i=0}^n (y_i - ((m+h) \cdot x_i + b))^2) - (\sum_{i=0}^n (y_i - (m \cdot x_i + b))^2)}{h}
+\frac{\partial \text{error}}{\partial m} = \lim_{h \to 0} \frac{(\sum_{i=0}^n (y_i - (m+h \cdot x_i + b))^2) - (\sum_{i=0}^n (y_i - (m \cdot x_i + b))^2)}{h}
 $$
 
 $$
