@@ -1,6 +1,6 @@
 ---
 navigation: true
-cover: 'assets/images/Gradient/gdMain.png'
+cover: 'assets/images/AutoCorr/ACmain.png'
 title: Gradient Descent & Linear Regression
 date: 2024-02-16
 class: post-template
