@@ -1,0 +1,10 @@
+---
+navigation: true
+cover: 'assets/images/Gradient/gdMain.png'
+title: Autocorrelation, Moving Average, & More
+date: 2024-02-01
+class: post-template
+---
+
+A simple introduction to Autocorrelation, Moving Average, STL Decomposition, Seasonal Trends, and much more!
+
