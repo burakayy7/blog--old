@@ -14,6 +14,8 @@ This became relevant when I started my research on forecasting epidemics like th
 
 So one thing we can use to predict hospitilizations or really any dataset that contains some sort of repeated pattern, is something called autoregressive models. But to learn this, one first needs to know what autocorrelation is, and other statistical metrics. Thus, this post. 
 
+****Disclaimer:** You can find most of the code refrenced here in my repo [here](https://github.com/burakayy7/ARIMA-model/blob/main/ARIMA_model.ipynb)
+
 
 ## What is Autocorrelation
 
@@ -32,4 +34,6 @@ And there are actually ways in which we can visualize these values.
 
 ### Visualizing Autocorrelation
 
-Now, in CS, there are a ton of different types of graphes. 
+Now, in CS, there are a ton of different types of graphes. And I won't get into them now since they are out of scope for this tutorial. So instead I will cheat and use libraries that do the math and code for us. 
+
+Now, time to actually code! 
