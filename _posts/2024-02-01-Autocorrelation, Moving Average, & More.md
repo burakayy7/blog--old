@@ -18,3 +18,10 @@ So one thing we can use to predict hospitilizations or really any dataset that c
 ## What is Autocorrelation
 
 Strictly speaking, autocorrelation refers to the amount a data point at time t, <u>depends</u> on the past _p-lagged values_. By this _past p-lagged values_ I am simply refering to the past p values. For example, say p = 10, past p-lagged values would be the past p values from time t (so from x<sub>t-10</sub> to x<sub>t</sub>, which is a total of 11 values).  
+
+So, to get into the math, here is the mathematical definition of autocorrelation:
+
+$$
+r_k = \frac{\sum_{t=k+1}^T \left(y_t - \hat{y}) \cdot \right (y_t-k - \hat{y}}{\sum_{t=1}^T (y_t - \hat{y}^2}
+$$
+
