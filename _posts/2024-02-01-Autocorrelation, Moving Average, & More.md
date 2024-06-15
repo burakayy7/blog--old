@@ -8,3 +8,4 @@ class: post-template
 
 A simple introduction to Autocorrelation, Moving Average, STL Decomposition, Seasonal Trends, and much more!
 
+Today, I would like to teach you about 
