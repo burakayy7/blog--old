@@ -37,3 +37,46 @@ And there are actually ways in which we can visualize these values.
 Now, in CS, there are a ton of different types of graphes. And I won't get into them now since they are out of scope for this tutorial. So instead I will cheat and use libraries that do the math and code for us. 
 
 Now, time to actually code! 
+
+So even though I provided you with [this repo](https://github.com/burakayy7/ARIMA-model/blob/main/ARIMA_model.ipynb), it is really messy, so if you want, create your own Google Colab notebook, and run this code:
+
+```python
+  #installations
+!pip install skforecast
+
+# Data manipulation
+# ==============================================================================
+import numpy as np
+import pandas as pd
+
+from skforecast.datasets import fetch_dataset
+
+# Plots
+# ==============================================================================
+import matplotlib.pyplot as plt
+plt.style.use('fivethirtyeight')
+plt.rcParams['lines.linewidth'] = 1.5
+plt.rcParams['font.size'] = 10
+
+# Data download
+# ==============================================================================
+data = fetch_dataset(name='h2o_exog', raw=True) #this dataset is on australian health system, from 1991 to 2008. This is from Hyndman (2023) fpp3
+#Monthly expenditure ($AUD) on corticosteroid drugs that the Australian health system had between 1991 and 2008. Two additional variables (exog_1, exog_2) are simulated.
+
+# Data preparation
+# ==============================================================================
+data = data.rename(columns={'fecha': 'date'})
+data['date'] = pd.to_datetime(data['date'], format='%Y-%m-%d')
+data = data.set_index('date')
+data = data.asfreq('MS')
+data = data.sort_index()
+#data.head()
+
+data = data.y
+
+data.plot()
+
+
+```
+
+
