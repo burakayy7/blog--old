@@ -17,11 +17,19 @@ So one thing we can use to predict hospitilizations or really any dataset that c
 
 ## What is Autocorrelation
 
-Strictly speaking, autocorrelation refers to the amount a data point at time t, <u>depends</u> on the past _p-lagged values_. By this _past p-lagged values_ I am simply refering to the past p values. For example, say p = 10, past p-lagged values would be the past p values from time t (so from x<sub>t-10</sub> to x<sub>t</sub>, which is a total of 11 values).  
+Strictly speaking, autocorrelation refers to the amount a data point at time t, <u>depends</u> on the past _p-lagged values_. So, just how correlation measures the linear relationship between two variables, autocorrelation measues the linear relationship bewteen _lagged_ values in a time series dataset(so since it is based off it's own past values, can you see why it's called _auto_? And here time series refers to the fact that the dataset is a function of time, as in, it's order via time). By this _past p-lagged values_ I am simply refering to the past p values. For example, say p = 10, past p-lagged values would be the past p values from time t (so from x<sub>t-10</sub> to x<sub>t</sub>, which is a total of 11 values).  
 
-So, to get into the math, here is the mathematical definition of autocorrelation:
+r<sub>1</sub> represents the correlation bewtween y<sub>t</sub> and y<sub>t-1</sub>. Similarly, r<sub>2</sub> measures the relationship between y<sub>t</sub> and y<sub>t-2</sub>. So, to get into the math, here is the mathematical definition of autocorrelation for the value r<sub>k</sub>:
 
 $$
-r_k = \frac{\sum_{t=k+1}^T \left(y_t - \hat{y}) \cdot \right (y_t-k - \hat{y}}{\sum_{t=1}^T (y_t - \hat{y}^2}
+r_k = \frac{\sum_{t=k+1}^T \left(y_t - \hat{y}) \cdot \right (y_t-k - \hat{y})}{\sum_{t=1}^T (y_t - \hat{y}^2)}
 $$
+(T is the length of our dataset)
 
+where the numerator represents the [sample autocovariance](https://ccs.fau.edu/~bressler/EDU/STSA/Modules/IV.pdf) and the denominator represents the [variance](https://en.wikipedia.org/wiki/Variance). Here, r<sub>k</sub> measures the correlation between the past lagged values.  
+
+And there are actually ways in which we can visualize these values.
+
+### Visualizing Autocorrelation
+
+Now, in CS, there are a ton of different types of graphes. 
