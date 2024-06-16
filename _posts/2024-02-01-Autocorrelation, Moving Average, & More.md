@@ -75,8 +75,26 @@ data = data.sort_index()
 data = data.y
 
 data.plot()
-
-
 ```
+
+You should see something like this:
+![image](https://github.com/burakayy7/blog/assets/120507146/c8b0a5ea-97e4-4a17-8cb5-8b5a8463b980)
+
+I will get into the specific statistical metrics we can see from this graph later, but for now, we can see the _Monthly expenditure ($AUD) on corticosteroid drugs that the Australian health system_ graphed over time, and as you can see, in certain times _each year_, it spikes. This pattern repeats throughout the entire dataset. 
+
+Now to use a function from the statsmodel library to make a autocorrelation graph:
+
+```python
+from statsmodels.graphics.tsaplots import plot_acf
+plot_acf(data, lags=12)
+```
+![image](https://github.com/burakayy7/blog/assets/120507146/f5a29c55-ca48-4173-8c00-98606e20a72b)
+
+or an alternate perspective using the partial autocorrelation (which I will not be discussing here, but I wanted to included just for you to see)
+```python
+from statsmodels.graphics.tsaplots import plot_pacf
+plot_pacf(data, lags=12)
+```
+![image](https://github.com/burakayy7/blog/assets/120507146/a32710ee-85b5-48b4-9af6-aa42f7a45b57)
 
 
