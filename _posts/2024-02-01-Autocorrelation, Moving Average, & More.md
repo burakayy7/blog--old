@@ -99,3 +99,8 @@ plot_pacf(data, lags=12)
 
 
 As you can see, lag 1 and lag 12 have the highest correlation. This makes sense since the dataset used is monthly. So, all the Januaries will have the same pattern, and so on. As, the pattern will repeat every 12 months, which is why lag 1 and lag 12 have the highest correlation.
+
+
+### Relevance of Autocorrelation
+
+This metric becomes relevant
