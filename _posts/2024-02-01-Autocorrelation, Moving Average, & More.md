@@ -181,4 +181,8 @@ ma.plot()
 ```
 ![image](https://github.com/burakayy7/blog/assets/120507146/fe7bc4e4-d446-4e75-8328-733664b23d7c)
 
+As you can see, the new graph is like a flattened version of the original. Or like as if the high peaks have been shrunken down (refer [here](https://en.wikipedia.org/wiki/Low-pass_filter) and [here](https://en.wikipedia.org/wiki/High-pass_filter)).  
+
+
+
 
