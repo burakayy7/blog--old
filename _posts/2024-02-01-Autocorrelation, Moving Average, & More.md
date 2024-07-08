@@ -1,7 +1,7 @@
 ---
 navigation: true
 cover: assets/images/AutoCorr/ACmain.png
-title: Part 1: Autocorrelation, Moving Average, & More
+title: Part 1 - Autocorrelation, Moving Average, & More
 date: 2024-02-01
 class: post-template
 ---
