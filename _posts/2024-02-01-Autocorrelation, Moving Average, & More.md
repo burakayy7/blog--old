@@ -190,7 +190,7 @@ If you look at the graph, you can see that the new graph outlines the general di
 Let's quickly dive into the math behind this to better understand. 
 
 $$
-\hat{T_t} = \frac{1}{m} \cdot \sum_{j=-k}^K y_t + j
+\hat{T_t} = \frac{1}{m} \cdot \sum_{j=-k}^k y_t + j
 $$
 
 $ k = (m - 1)/2 $
@@ -200,5 +200,5 @@ This is known as averaging withtin k periods. And this is okay when m is odd but
 So, as a solution, we will take the second-order moving average (2-MA):
 
 $$
-\hat{T_t} = \frac{1}{2} \cdot [(\frac{1}{m} \cdot \sum_{j=-k-1}^K y_t + j) + ( \frac{1}{m} \cdot \sum_{j=-k}^(K+1) y_t + j)]
+\hat{T_t} = \frac{1}{2} \cdot [(\frac{1}{m} \cdot \sum_{j=-k-1}^k y_t + j) + ( \frac{1}{m} \cdot \sum_{j=-k}^(k+1) y_t + j)]
 $$
