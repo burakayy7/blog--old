@@ -181,7 +181,11 @@ ma.plot()
 ```
 ![image](https://github.com/burakayy7/blog/assets/120507146/fe7bc4e4-d446-4e75-8328-733664b23d7c)
 
-As you can see, the new graph is like a flattened version of the original. Or like as if the high peaks have been shrunken down (refer [here](https://en.wikipedia.org/wiki/Low-pass_filter) and [here](https://en.wikipedia.org/wiki/High-pass_filter)). As we can see, this essentially smoothes our data (like a filter).
+As you can see, the new graph is like a flattened version of the original. Or like as if the high peaks have been shrunken down (refer [here](https://en.wikipedia.org/wiki/Low-pass_filter) and [here](https://en.wikipedia.org/wiki/High-pass_filter)). As we can see, this essentially smoothes our data (like a filter). 
+
+#### The reason of taking a Moving Average
+
+If you look at the graph, you can see that the new graph outlines the general direction the original one was headed (up and to the right, or a positive trend). Thus, we can use moving average filters to **estimate the trend in a dataset!**
 
 Let's quickly dive into the math behind this to better understand. 
 
@@ -189,4 +193,12 @@ $$
 \hat{T_t} = \frac{1}{m} \cdot \sum_{j=-k}^K y_t + j
 $$
 
+$ k = (m - 1)/2 $
 
+This is known as averaging withtin k periods. And this is okay when m is odd but not when m is even (can you see why?). The short answer is because then k becomes a fraction and so when you try to get the average from -k to k, there becomes some difficulties in getting the exact value in code. 
+
+So, as a solution, we will take the second-order moving average (2-MA):
+
+$$
+\hat{T_t} = \frac{1}{2} \cdot [(\frac{1}{m} \cdot \sum_{j=-k-1}^K y_t + j) + ( \frac{1}{m} \cdot \sum_{j=-k}^(K+1) y_t + j)]
+$$
