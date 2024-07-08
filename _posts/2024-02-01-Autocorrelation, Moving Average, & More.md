@@ -204,3 +204,6 @@ So, as a solution, we will take the second-order moving average (2-MA):
 $$
 \hat{T_t} = \frac{1}{2} \cdot [(\frac{1}{m} \cdot \sum_{j=-k-1}^k y_t + j) + ( \frac{1}{m} \cdot \sum_{j=-k}^{k+1} y_t + j)]
 $$
+
+
+What this does to solve the fraction problem of k, is take an average of from y~t-k-1~ to y~t+k~, then average that with the average from y~t-k~ to y~t+k+1~. So let's say m = 4, thus k = 1.5, in Python, this will simplify to 1. So we will take the average from y~t-2~ to y~t+1~, then average that with the average from  y~t-1~ to y~t+2~. Try this out on paper yourself to get an understanding on how this method of averaging works. 
