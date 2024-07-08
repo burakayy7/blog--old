@@ -1,4 +1,9 @@
 ---
-
-
+navigation: true
+cover: assets/images/AutoCorr/ACmain.png
+title: Part 1 - Autocorrelation, Moving Average, & More
+date: 2024-02-01
+class: post-template
 ---
+
+A simple introduction to Autocorrelation, Moving Average, STL Decomposition, Seasonal Trends, and much more!
