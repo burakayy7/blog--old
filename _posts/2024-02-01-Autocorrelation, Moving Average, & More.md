@@ -206,7 +206,25 @@ $$
 $$
 
 
-What this does to solve the fraction problem of k, is take an average of from y<sub>t-k-1</sub> to y<sub>t+k</sub>, then average that with the average from y<sub>t-k</sub> to y<sub>t+k+1</sub>. So let's say m = 4, thus k = 1.5, in Python, this will simplify to 1. So we will take the average from y~t-2~ to y~t+1~, then average that with the average from  y~t-1~ to y~t+2~. Try this out on paper yourself to get an understanding on how this method of averaging works. 
+What this does to solve the fraction problem of k, is take an average of from y<sub>t-k-1</sub> to y<sub>t+k</sub>, then average that with the average from y<sub>t-k</sub> to y<sub>t+k+1</sub>. So let's say m = 4, thus k = 1.5, in Python, this will simplify to 1. So we will take the average from y<sub>t-2</sub> to y<sub>t+1</sub>, then average that with the average from  y~t-1~ to y~t+2~. Try this out on paper yourself to get an understanding on how this method of averaging works. 
 
 
 So now we have a method to take the moving average of a dataset, no matter what m is. 
+
+And if you look at our function above, you can see how the two different functions are implemented depending on if the order is even or odd. 
+
+
+And this topic naturally leads us to our next topic.
+
+### Seasonal Trends
+
+
+
+
+
+
+
+
+
+
+## STL Decomposition
