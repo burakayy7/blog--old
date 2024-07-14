@@ -86,7 +86,8 @@ w_t =
 \end{cases}
 $$
 
-Here, w<sub>t</sub> depends on 𝜆. If λ is zero, we take the logarithm of y (which in Box-Cox transformation is always a natural logarithm, i.e., to base _e_). However, if λ is anything else, w<sub>t</sub> will be $$ \frac{{\operatorname{{sign}}(y_t) \cdot |\lambda - 1|}}{{\lambda}} $$.
+Here, w<sub>t</sub> depends on 𝜆. If λ is zero, we take the logarithm of y (which in Box-Cox transformation is always a natural logarithm, i.e., to base _e_). However, if λ is anything else, w<sub>t</sub> will be 
+$$ \frac{{\operatorname{{sign}}(y_t) \cdot |\lambda - 1|}}{{\lambda}} $$.
 
 
 here it is in code:
@@ -123,9 +124,13 @@ Here we will dicuss how we can "split" apart a time series dataset.
 
 ### Classical Decomposition
 
+In Classical Decomposition we assume the seasonal component is constant every year. But for multiplicative seasonality, the _m_ values that form the seasonal component are sometimes called the "seasonal indicies".
+
+#### Additive and Multiplicative Decompositions
+
 
 ### STL Decomposition
 
 
 
-#### Additive and Multiplicative Decompositions
+
