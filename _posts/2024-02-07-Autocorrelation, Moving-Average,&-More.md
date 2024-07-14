@@ -156,7 +156,13 @@ We assume an addititve decomposition is y<sub>t</sub> = S<sub>t</sub> + T<sub>t<
 
 and multiplicative is y<sub>t</sub> = S<sub>t</sub> * T<sub>t</sub> * R<sub>t</sub>. And also if you want to convert multiplicative to additive: y<sub>t</sub> = S<sub>t</sub> * T<sub>t</sub> * R<sub>t</sub> is equal to \[ \log y_t = \log S_t + \log T_t + \log R_t. \]
 
-  - T<sub>t</sub> - Trend-cycle component of 
+  - T<sub>t</sub> - Trend-cycle component of period t
+  - S<sub>t</sub> - Seasonal component of period t
+  - R<sub>t</sub> - Remainder component of period t
+
+#### Estimating the Seasonal Component
+
+
 ### STL Decomposition
 
 
