@@ -146,6 +146,11 @@ $$
 y_t / \hat{T}_t
 $$
 instead. 
+
+
+### In practice
+
+So here is how decompositions basically work: 
 ### STL Decomposition
 
 
