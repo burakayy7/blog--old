@@ -164,7 +164,22 @@ and multiplicative is y<sub>t</sub> = S<sub>t</sub> * T<sub>t</sub> * R<sub>t</s
 
 #### Estimating the Seasonal Component
 
-First, take the average accross every Januaries to get S(1), if it's monthly. Here's what that means. 
+First, take the average accross every Januaries to get S(1), if it's monthly. Here's what that means. If we had a dataset that spanned 4 years, we would take the averages of every January data point, then every February data point, then every March, and so on. Thus, we would be left with 12 averages if it's monthly data. If it's weekly, then we would take the average of every week in the year, and so on.
+
+So for additive monthly:
+$$
+S^{(1)} + S^{(2)} + ... + S^{(12)} = 0
+$$
+and for multiplicative monthly, we have:
+$$
+S^{(1)} + S^{(2)} + ... + S^{(12)} = m
+$$
+
+So first, de-trend the data. Then take the average values for each season!!
+
+
+
+
 ### STL Decomposition
 
 Now, this algorithmically is complicated for these type of posts; but you should be able to understand them with the basics provided above. 
