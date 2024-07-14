@@ -86,7 +86,7 @@ w_t =
 \end{cases}
 $$
 
-Here, w<sub>t</sub> depends on $ \lambda $ (or lambda). So, if $\lambda$ is zero, the we will take the logarithm of y, but if $\lambda$ is anything else, w<sub>t</sub will be $\frac{\operatorname{sign}(y_t) \cdot |\lambda - 1|}{\lambda}$.
+Here, w<sub>t</sub> depends on $ \lambda $ (or lambda). So, if $\lambda$ is zero, the we will take the logarithm of y (which in Box-Cox is always a natural logarithm (i.e. to base _e_)), but if $\lambda$ is anything else, w<sub>t</sub will be $\frac{\operatorname{sign}(y_t) \cdot |\lambda - 1|}{\lambda}$.
 
 ### STL Decomposition
 
