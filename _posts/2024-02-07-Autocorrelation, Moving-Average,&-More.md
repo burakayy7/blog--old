@@ -87,7 +87,9 @@ w_t =
 $$
 
 Here, w<sub>t</sub> depends on 𝜆. If λ is zero, we take the logarithm of y (which in Box-Cox transformation is always a natural logarithm, i.e., to base _e_). However, if λ is anything else, w<sub>t</sub> will be 
-$$ \frac{{\operatorname{{sign}}(y_t) \cdot |\lambda - 1|}}{{\lambda}} $$.
+$$ 
+\frac{{\operatorname{{sign}}(y_t) \cdot |\lambda - 1|}}{{\lambda}} 
+$$.
 
 
 here it is in code:
@@ -154,7 +156,7 @@ So here is how decompositions basically work:
 
 We assume an addititve decomposition is y<sub>t</sub> = S<sub>t</sub> + T<sub>t</sub> + R<sub>t</sub>. 
 
-and multiplicative is y<sub>t</sub> = S<sub>t</sub> * T<sub>t</sub> * R<sub>t</sub>. And also if you want to convert multiplicative to additive: y<sub>t</sub> = S<sub>t</sub> * T<sub>t</sub> * R<sub>t</sub> is equal to \[ \log y_t = \log S_t + \log T_t + \log R_t. \]
+and multiplicative is y<sub>t</sub> = S<sub>t</sub> * T<sub>t</sub> * R<sub>t</sub>. And also if you want to convert multiplicative to additive: y<sub>t</sub> = S<sub>t</sub> * T<sub>t</sub> * R<sub>t</sub> is equal to $\log y_t = \log S_t + \log T_t + \log R_t.$
 
   - T<sub>t</sub> - Trend-cycle component of period t
   - S<sub>t</sub> - Seasonal component of period t
