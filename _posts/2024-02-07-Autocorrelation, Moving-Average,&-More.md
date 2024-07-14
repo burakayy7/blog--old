@@ -131,7 +131,9 @@ In Classical Decomposition we assume the seasonal component is constant every ye
 #### Additive and Multiplicative Decompositions
 
 Steps to an Additive Decomposition:
-**Step 1:** If m is an even number, compute the trend-cycle component $$ \hat{T}_t $$ using a 2 x m-MA. If m is an odd number, compute the trend-cycle component $$ \hat{T}_t $$ using an m-MA; using this:
+**Step 1:** If m is an even number, compute the trend-cycle component $$ \hat{T}_t $$ using a 2 x m-MA. If m is an odd number, compute the trend-cycle component 
+$$ \hat{T}_t $$ 
+using an m-MA; using this:
 $$
 \hat{T_t} = \frac{1}{2} \cdot [(\frac{1}{m} \cdot \sum_{j=-k-1}^k y_t + j) + ( \frac{1}{m} \cdot \sum_{j=-k}^{k+1} y_t + j)]
 $$
