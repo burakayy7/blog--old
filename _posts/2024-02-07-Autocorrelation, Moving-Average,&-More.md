@@ -156,7 +156,7 @@ So here is how decompositions basically work:
 
 We assume an addititve decomposition is y<sub>t</sub> = S<sub>t</sub> + T<sub>t</sub> + R<sub>t</sub>. 
 
-and multiplicative is y<sub>t</sub> = S<sub>t</sub> * T<sub>t</sub> * R<sub>t</sub>. And also if you want to convert multiplicative to additive: y<sub>t</sub> = S<sub>t</sub> * T<sub>t</sub> * R<sub>t</sub> is equal to $\log y_t = \log S_t + \log T_t + \log R_t.$
+and multiplicative is y<sub>t</sub> = S<sub>t</sub> * T<sub>t</sub> * R<sub>t</sub>. And also if you want to convert multiplicative to additive: y<sub>t</sub> = S<sub>t</sub> * T<sub>t</sub> * R<sub>t</sub> is equal to $$ \log y_t = \log S_t + \log T_t + \log R_t. $$
 
   - T<sub>t</sub> - Trend-cycle component of period t
   - S<sub>t</sub> - Seasonal component of period t
@@ -164,7 +164,7 @@ and multiplicative is y<sub>t</sub> = S<sub>t</sub> * T<sub>t</sub> * R<sub>t</s
 
 #### Estimating the Seasonal Component
 
-
+First, take the average accross every Januaries to get S(1), if it's monthly. Here's what that means. 
 ### STL Decomposition
 
 
