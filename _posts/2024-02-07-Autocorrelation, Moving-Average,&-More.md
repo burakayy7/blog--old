@@ -88,6 +88,33 @@ $$
 
 Here, \( w_t \) depends on \( \lambda \). If \( \lambda \) is zero, we take the logarithm of \( y_t \) (which in Box-Cox transformation is always a natural logarithm, i.e., to base \( e \)). However, if \( \lambda \) is anything else, \( w_t \) will be \( \frac{\operatorname{sign}(y_t) \cdot |\lambda - 1|}{\lambda} \).
 
+here it is in code:
+ ```python
+#Data Transformations
+data = data.y
+def get_sign(num):
+  if (num < 0):
+    return -1
+  return 1
+
+def bickel_doksum_transform(data, lam):
+  new_data = data.copy()
+  if (lam == 0):
+    for i in range(len(data)):
+      new_data.iloc[i] = np.log(data.iloc[i])
+  else:
+    for i in range(len(data)):
+      new_data.iloc[i] = (get_sign(data.iloc[i])*(pow(abs(data.iloc[i]), lam)-1))/lam
+  return new_data
+
+t_data = bickel_doksum_transform(data, .1)
+data.plot()
+t_data.plot()
+```
+![image](https://github.com/user-attachments/assets/8e8b38b4-1aa0-4a4e-bae7-eaba83952ea4)
+
+
+Please visit here for a [more detailed explaination](https://otexts.com/fpp3/transformations.html).
 
 ### STL Decomposition
 
