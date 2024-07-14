@@ -6,4 +6,4 @@ date: 2024-02-07
 class: post-template
 ---
 
-A simple introduction to Autocorrelation, Moving Average, STL Decomposition, Seasonal Trends, and much more!
+A simple introduction to Seasonal Trends, Decompositions, and many more!
