@@ -86,7 +86,8 @@ w_t =
 \end{cases}
 $$
 
-Here, \( w_t \) depends on \( \lambda \). If \( \lambda \) is zero, we take the logarithm of \( y_t \) (which in Box-Cox transformation is always a natural logarithm, i.e., to base \( e \)). However, if \( \lambda \) is anything else, \( w_t \) will be \( \frac{\operatorname{sign}(y_t) \cdot |\lambda - 1|}{\lambda} \).
+Here, \( w_t \) depends on \( \lambda \). If \( \lambda \) is zero, we take the logarithm of \( y_t \) (which in Box-Cox transformation is always a natural logarithm, i.e., to base \( e \)). However, if \( \lambda \) is anything else, \( w_t \) will be \( \frac{{\operatorname{{sign}}(y_t) \cdot |\lambda - 1|}}{{\lambda}} \).
+
 
 here it is in code:
  ```python
