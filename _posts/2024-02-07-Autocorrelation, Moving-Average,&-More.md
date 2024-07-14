@@ -55,4 +55,20 @@ data
 Then you can click the "Convert this data to an interactive table" button and see the entire dataset.
 ![image](https://github.com/user-attachments/assets/18b20d7d-ae68-4dbb-8748-3955b6d24741)
 
-The first data is April 1st, and from the next April 1st, you can see that there is exactly one major spike in the data. And it happens
+As you can see, the spike occurs around winter time. Now there is probably an entire medical reason for this (try to research and find the answer yourself), but that's outside the scope of this lesson. The first data is April 1st, and from the next April 1st, you can see that there is exactly one major spike in the data. The spike is a function of time, and this pattern is reoccuring. 
+
+And that is the simple, introductory, definition to seasonality. 
+
+And that's is simply what we are refering to when we say _Seasonal Trends._ Any patterns in data that has a repeated, predictable, and time-dependent factors, is a type of seasonal trend (can you see why we call it seasonal?).
+
+
+
+
+
+
+
+
+
+
+
+#### Cycles
