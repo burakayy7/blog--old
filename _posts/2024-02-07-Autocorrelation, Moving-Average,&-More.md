@@ -86,7 +86,7 @@ w_t =
 \end{cases}
 $$
 
-Here, \( w_t \) depends on \( \lambda \). If \( \lambda \) is zero, we take the logarithm of \( y_t \) (which in Box-Cox transformation is always a natural logarithm, i.e., to base \( e \)). However, if \( \lambda \) is anything else, \( w_t \) will be \( \frac{{\operatorname{{sign}}(y_t) \cdot |\lambda - 1|}}{{\lambda}} \).
+Here, w<sub>t</sub> depends on \( \lambda \). If \( \lambda \) is zero, we take the logarithm of \( y_t \) (which in Box-Cox transformation is always a natural logarithm, i.e., to base \( e \)). However, if \( \lambda \) is anything else, \( w_t \) will be \( \frac{{\operatorname{{sign}}(y_t) \cdot |\lambda - 1|}}{{\lambda}} \).
 
 
 here it is in code:
@@ -116,6 +116,13 @@ t_data.plot()
 
 
 Please visit here for a [more detailed explaination](https://otexts.com/fpp3/transformations.html).
+
+## Decomposition
+
+Here we will dicuss how we can "split" apart a time series dataset.
+
+### Classical Decomposition
+
 
 ### STL Decomposition
 
