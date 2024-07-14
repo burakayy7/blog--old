@@ -177,9 +177,79 @@ $$
 S^{(1)} + S^{(2)} + ... + S^{(12)} = m
 $$
 
-So first, de-trend the data. Then take the average values for each season!!
+So first, de-trend the data. Then take the average values for each season!! And $$ \hat{S}_t $$ is just the replications of seasonal indicies!
 
 
+So here is the code:
+```python
+from statsmodels.tsa.seasonal import seasonal_decompose
+def additive_de_trend(data, order):
+  new_data = data.copy()
+  length = len(data)
+  k = int((order-1)/2)
+  for i in range(length):
+    if (i > k and i < length-k):
+      if (order % 2 == 1):
+        sum = 0
+        for j in range(i-k, i+k):
+          sum += data.iloc[j]
+        avg = sum/order
+        new_data.iloc[i] = data.iloc[i] - avg
+      else:
+        sum1 = 0
+        sum2 = 0
+        for j in range(i-k-1, i+k):
+          sum1 += data.iloc[j]
+        avg1 = sum1/order
+        for j in range(i-k, i+k+1):
+          sum2 += data.iloc[j]
+        avg2 = sum2/order
+        new_data.iloc[i] = data.iloc[i] - ((avg1+avg2)/2)
+  return new_data
+
+def seasonal_comp(data, order):
+  new_data = data.copy()
+  seasonal_components = pd.DataFrame(index = range(order), columns=['y'])
+  de_trended_data = additive_de_trend(data, 12)
+  for i in range(order):
+    sum = 0
+    count = 0
+    index = i
+    while index < len(de_trended_data):
+      sum += de_trended_data.iloc[index]
+      count += 1
+      index += order
+    seasonal_components.y.iloc[i] = (sum/count)
+  place = 0
+  for i in range(len(data)):
+    new_data.iloc[i] = seasonal_components.y.iloc[place]
+    place += 1
+    if place >= order:
+      place = 0
+  return new_data
+
+ad_data = additive_de_trend(data, 20)
+season_comps = seasonal_comp(data, 12)
+data.plot()
+#ad_data.plot()
+trend_comp = moving_average(data, 12)
+trend_comp.plot()
+season_comps.plot()
+decomposition = seasonal_decompose(data)
+
+# Plot the components
+decomposition.plot()
+sum1 = 0
+for i in range(len(season_comps)):
+  sum1 += season_comps.iloc[i]
+print(len(data))
+```
+This will compare our code, to an official Decomposition Function:
+![image](https://github.com/user-attachments/assets/0b22fd18-a727-4fce-9ac1-2e4bad9f779b)
+to 
+![image](https://github.com/user-attachments/assets/836217a4-232b-40cb-9cb4-a8b1bf0001a9)
+
+And as you can see, they are prett damn close!! :)
 
 
 ### STL Decomposition
