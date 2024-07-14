@@ -79,13 +79,14 @@ In this section, we will discuss two main ideas which are often closely related:
 Transformations are useful when the data exhibits increases or decreases with the level of the series, such as logorithmic transformations. Transformations are often used to simplify the data before forecasting. Here we will dicuss a common one: the Bickel & Doksum Transformation which is actually a modified Box-Cox Transformation. Mathematically, it looks like this:
 
 $$
+w_t =
 \begin{cases}
     \log(y_t) & \text{if } \lambda = 0, \\
     \frac{\operatorname{sign}(y_t) \cdot |\lambda - 1|}{\lambda} & \text{otherwise}.
 \end{cases}
 $$
 
-
+Here, 
 
 ### STL Decomposition
 
