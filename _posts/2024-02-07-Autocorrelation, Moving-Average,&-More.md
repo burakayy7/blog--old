@@ -63,12 +63,20 @@ And that's is simply what we are refering to when we say _Seasonal Trends._ Any 
 
 
 
-
-
-
-
-
-
-
-
 #### Cycles
+
+Similarly, cycles are when the data shows rises and falls that are not of a fixed frequency. This could be from economic activity. 
+
+Cycles and Seasonality are often confused, and their main differentiation is if the pattern is of fixed frequency. 
+
+
+## Decompositions
+
+
+
+$$
+w_t = \begin{cases}
+    \log(y_t) & \text{if } \lambda = 0, \\
+    \frac{\operatorname{sign}(y_t) \cdot |\lambda - 1|}{\lambda} & \text{otherwise}.
+\end{cases}
+$$
