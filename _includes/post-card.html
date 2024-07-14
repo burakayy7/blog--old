@@ -1,5 +1,21 @@
 {% assign words_per_minute = site.words_per_minute | default: 200 %}
 
+
+<style>
+.post-card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-card-date {
+    margin-left: auto;
+    font-size: 0.875em;
+    color: #999;
+}
+</style>
+
+
 {% for post in paginator.posts %}
     <article class="post-card {{ page.class }}{% unless post.cover %} no-image{% endunless %}">
         {% if post.cover %}
@@ -49,6 +65,7 @@
                       {{ words | divided_by:words_per_minute }} min read
                     {% endif %}
                 </span>
+                <span class="post-card-date">{{ post.date | date: "%B %d, %Y" }}</span>
             </footer>
         </div>
     </article>
