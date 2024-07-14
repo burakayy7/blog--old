@@ -128,6 +128,17 @@ In Classical Decomposition we assume the seasonal component is constant every ye
 
 #### Additive and Multiplicative Decompositions
 
+Steps to an Additive Decomposition:
+**Step 1:** If \( m \) is an even number, compute the trend-cycle component \( \hat{T}_t \) using a \( 2 \times m \)-MA. If \( m \) is an odd number, compute the trend-cycle component \( \hat{T}_t \) using an \( m \)-MA; using this:
+$$
+\hat{T_t} = \frac{1}{2} \cdot [(\frac{1}{m} \cdot \sum_{j=-k-1}^k y_t + j) + ( \frac{1}{m} \cdot \sum_{j=-k}^{k+1} y_t + j)]
+$$
+
+**Step 2:** Calculate the detrended series: y<sub>y</sub> - T<sub>t</sub>
+
+**Step 3:** To estimate the seasonal component for each season, simply average the detrended values for that season. For example, with monthly data, the seasonal component for March is the average of all the detrended March values in the data. These seasonal component values are then adjusted to ensure that they sum to zero. The seasonal component \( \hat{S}_t \) is obtained by stringing together these monthly values and replicating the sequence for each year of data.
+
+
 
 ### STL Decomposition
 
