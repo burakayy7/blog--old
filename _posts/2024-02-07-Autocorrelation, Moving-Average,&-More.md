@@ -72,6 +72,13 @@ Cycles and Seasonality are often confused, and their main differentiation is if 
 
 ## Decompositions
 
+In this section, we will discuss two main ideas which are often closely related: transformations and decompositions. 
+
+### Box-Cox Transformations
+
+
+
+
 
 
 $$
@@ -80,3 +87,10 @@ w_t = \begin{cases}
     \frac{\operatorname{sign}(y_t) \cdot |\lambda - 1|}{\lambda} & \text{otherwise}.
 \end{cases}
 $$
+
+
+
+### STL Decomposition
+
+
+#### Additive and Multiplicative Decompositions
