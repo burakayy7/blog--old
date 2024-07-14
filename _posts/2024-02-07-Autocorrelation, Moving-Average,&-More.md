@@ -167,6 +167,10 @@ and multiplicative is y<sub>t</sub> = S<sub>t</sub> * T<sub>t</sub> * R<sub>t</s
 First, take the average accross every Januaries to get S(1), if it's monthly. Here's what that means. 
 ### STL Decomposition
 
+Now, this algorithmically is complicated for these type of posts; but you should be able to understand them with the basics provided above. 
 
+STL stands for _Seasonal & Trend Decomposition using Leoss_. What this does is it basically updates trend and seasonality components iteratively, starting with $$
+\hat{T}_t = 0
+$$
 
 
