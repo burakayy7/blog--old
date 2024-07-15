@@ -11,6 +11,11 @@ the present. And I would like to share them with you here.
 
 # Book Display
 
+---
+layout: default
+---
+
+{% raw %}
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -67,7 +72,7 @@ the present. And I would like to share them with you here.
             <img class="book-cover" id="bookCover" src="loading.gif" alt="Book Cover">
         </div>
         <div class="button-container">
-            <a id="amazonLink" class="amazon-button" href="https://www.amazon.com/Practical-Algebra-Self-Teaching-Guide-Second/dp/0471530123/ref=sr_1_4?crid=AEVGNKLDR9WW&dib=eyJ2IjoiMSJ9.ZF6lT-0kmh65KXhCHGSSeqGl0u03zFrfD1ntdNkBZNskkOSH-004pX5ujm4oNeaHENVxd0rq_K7Xo9rHkZwGrbzjSC7nsUWzp_Af0uEbf7ElBNNWeJeBGpGdQRoUF3Fag76NiR9yugDIc4rQ3OBZyeUMG4ugd3xBsFDmNfx8Rvb2zelDI8D-bBpF4EfiKwO4rowYlZMY5e4uL7JkU3xH7TwGdpKCKNmma84IUTemb40.eAb8913vDP9cEoSWcVTNlfuze3WrvVTYh4weSw4PMMY&dib_tag=se&keywords=practical+algebra&qid=1721076656&sprefix=practical%2Caps%2C1541&sr=8-4" target="_blank">View on Amazon</a>
+            <a id="amazonLink" class="amazon-button" href="#" target="_blank">View on Amazon</a>
         </div>
     </div>
 
@@ -92,4 +97,28 @@ the present. And I would like to share them with you here.
                 .then(response => response.text())
                 .then(data => {
                     let parser = new DOMParser();
-                    let htmlDoc = pars
+                    let htmlDoc = parser.parseFromString(data, 'text/html');
+                    let bookCover = htmlDoc.querySelector('#imgBlkFront');
+
+                    if (bookCover) {
+                        document.getElementById('bookCover').src = bookCover.src;
+                        document.getElementById('amazonLink').href = amazonApiUrl;
+                    } else {
+                        alert('Failed to fetch book information. Please try again later.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching book information:', error);
+                    alert('Failed to fetch book information. Please try again later.');
+                });
+        }
+
+        // Replace with your Amazon link
+        let amazonLink = "[https://www.amazon.com/dp/B09FQ48V74](https://www.amazon.com/Practical-Algebra-Self-Teaching-Guide-Second/dp/0471530123/ref=sr_1_4?crid=AEVGNKLDR9WW&dib=eyJ2IjoiMSJ9.ZF6lT-0kmh65KXhCHGSSeqGl0u03zFrfD1ntdNkBZNskkOSH-004pX5ujm4oNeaHENVxd0rq_K7Xo9rHkZwGrbzjSC7nsUWzp_Af0uEbf7ElBNNWeJeBGpGdQRoUF3Fag76NiR9yugDIc4rQ3OBZyeUMG4ugd3xBsFDmNfx8Rvb2zelDI8D-bBpF4EfiKwO4rowYlZMY5e4uL7JkU3xH7TwGdpKCKNmma84IUTemb40.eAb8913vDP9cEoSWcVTNlfuze3WrvVTYh4weSw4PMMY&dib_tag=se&keywords=practical+algebra&qid=1721076656&sprefix=practical%2Caps%2C1541&sr=8-4)";
+
+        // Fetch book information
+        fetchBookInfo(amazonLink);
+    </script>
+</body>
+</html>
+{% endraw %}
