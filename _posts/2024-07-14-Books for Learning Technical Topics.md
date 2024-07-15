@@ -9,6 +9,10 @@ class: post-template
 For a long time, I have been gather resources to help me with my goals and projects. Specifically, I have been slowly growing my collection of technical books, from 6th grade to 
 the present. And I would like to share them with you here. 
 
+# Book Display
+
+```html
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -57,16 +61,35 @@ the present. And I would like to share them with you here.
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="bookDisplay">
         <h2>Book Display</h2>
-        <div>
-            <a href="[https://www.amazon.com/dp/INSERT_BOOK_ID_HERE](https://www.amazon.com/Practical-Algebra-Self-Teaching-Guide-Second/dp/0471530123/ref=sr_1_4?crid=AEVGNKLDR9WW&dib=eyJ2IjoiMSJ9.ZF6lT-0kmh65KXhCHGSSeqGl0u03zFrfD1ntdNkBZNskkOSH-004pX5ujm4oNeaHENVxd0rq_K7Xo9rHkZwGrbzjSC7nsUWzp_Af0uEbf7ElBNNWeJeBGpGdQRoUF3Fag76NiR9yugDIc4rQ3OBZyeUMG4ugd3xBsFDmNfx8Rvb2zelDI8D-bBpF4EfiKwO4rowYlZMY5e4uL7JkU3xH7TwGdpKCKNmma84IUTemb40.eAb8913vDP9cEoSWcVTNlfuze3WrvVTYh4weSw4PMMY&dib_tag=se&keywords=practical+algebra&qid=1721076656&sprefix=practical%2Caps%2C1541&sr=8-4)" target="_blank">
-                <img class="book-cover" src="https://images-na.ssl-images-amazon.com/images/I/51JF1asK9NL.jpg" alt="Book Cover">
-            </a>
+        <div id="bookInfo">
+            <img class="book-cover" id="bookCover" src="loading.gif" alt="Book Cover">
         </div>
         <div class="button-container">
-            <a class="amazon-button" href="[https://www.amazon.com/dp/INSERT_BOOK_ID_HERE](https://www.amazon.com/Practical-Algebra-Self-Teaching-Guide-Second/dp/0471530123/ref=sr_1_4?crid=AEVGNKLDR9WW&dib=eyJ2IjoiMSJ9.ZF6lT-0kmh65KXhCHGSSeqGl0u03zFrfD1ntdNkBZNskkOSH-004pX5ujm4oNeaHENVxd0rq_K7Xo9rHkZwGrbzjSC7nsUWzp_Af0uEbf7ElBNNWeJeBGpGdQRoUF3Fag76NiR9yugDIc4rQ3OBZyeUMG4ugd3xBsFDmNfx8Rvb2zelDI8D-bBpF4EfiKwO4rowYlZMY5e4uL7JkU3xH7TwGdpKCKNmma84IUTemb40.eAb8913vDP9cEoSWcVTNlfuze3WrvVTYh4weSw4PMMY&dib_tag=se&keywords=practical+algebra&qid=1721076656&sprefix=practical%2Caps%2C1541&sr=8-4)" target="_blank">View on Amazon</a>
+            <a id="amazonLink" class="amazon-button" href="https://www.amazon.com/Practical-Algebra-Self-Teaching-Guide-Second/dp/0471530123/ref=sr_1_4?crid=AEVGNKLDR9WW&dib=eyJ2IjoiMSJ9.ZF6lT-0kmh65KXhCHGSSeqGl0u03zFrfD1ntdNkBZNskkOSH-004pX5ujm4oNeaHENVxd0rq_K7Xo9rHkZwGrbzjSC7nsUWzp_Af0uEbf7ElBNNWeJeBGpGdQRoUF3Fag76NiR9yugDIc4rQ3OBZyeUMG4ugd3xBsFDmNfx8Rvb2zelDI8D-bBpF4EfiKwO4rowYlZMY5e4uL7JkU3xH7TwGdpKCKNmma84IUTemb40.eAb8913vDP9cEoSWcVTNlfuze3WrvVTYh4weSw4PMMY&dib_tag=se&keywords=practical+algebra&qid=1721076656&sprefix=practical%2Caps%2C1541&sr=8-4" target="_blank">View on Amazon</a>
         </div>
     </div>
-</body>
-</html>
+
+    <script>
+        // Function to extract ASIN from Amazon URL
+        function extractASIN(url) {
+            let match = url.match(/\/(dp|gp\/product)\/([0-9A-Z]{10})/);
+            return match ? match[2] : null;
+        }
+
+        // Function to fetch book information and update display
+        function fetchBookInfo(url) {
+            let asin = extractASIN(url);
+            if (!asin) {
+                alert('Invalid Amazon link. Please provide a valid Amazon product page URL.');
+                return;
+            }
+
+            let amazonApiUrl = `https://www.amazon.com/gp/product/${asin}/?language=en_US&psc=1&sprefix=book`;
+            
+            fetch(amazonApiUrl)
+                .then(response => response.text())
+                .then(data => {
+                    let parser = new DOMParser();
+                    let htmlDoc = pars
