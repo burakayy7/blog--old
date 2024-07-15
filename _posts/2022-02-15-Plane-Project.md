@@ -1,8 +1,8 @@
 ---
 navigation: true
-cover: 
+cover: ""
 title: Introducing the Plane Project
-date: 2022--2-15
+date: 2022-2-15
 class: post-template
 ---
 
