@@ -13,7 +13,10 @@ All of these are going to be in sequential order, so the first one is my first e
 
 
 <div align="center">
-    <h2>Practical Algebra: A Self-Teaching Guide, Second Edition</h2>
-    <img src="https://m.media-amazon.com/images/I/81B0wgtFaXL._SL1500_.jpg" width=500 height=700/>
+    <h2><a href="https://amzn.to/4fcP5Of" style="text-decoration: none; color: inherit;">Practical Algebra: A Self-Teaching Guide, Second Edition</a></h2>
+    <img src="https://m.media-amazon.com/images/I/81B0wgtFaXL._SL1500_.jpg" width="500" height="700" />
+    <div style="font-size: 24px; color: gold;">
+        ★★★☆☆
+    </div>
 </div>
 
