@@ -1,6 +1,6 @@
 ---
 navigation: true
-cover: https://dl3.pushbulletusercontent.com/tt0lxV9rocHqXTrqG6mnFlCQ6af3S6O9/20240720_161348.jpg
+cover: 'assets/images/books/booksCover.jpg'
 title: Books for Learning Technical Topics
 date: 2024-07-14
 class: post-template
