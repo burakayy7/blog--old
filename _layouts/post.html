@@ -42,11 +42,11 @@ into the {body} of the default.hbs template -->
             </header>
 
             {% if page.cover %}
-            <figure class="post-full-image" style="background-image: url({{ site.baseurl }}{{ page.cover }})">
+            <figure class="post-full-image" style="background-image: url({{ site.baseurl }}{{ page.cover }}); height: 400px; background-size: cover; background-position: center;">
             </figure>
             {% endif %}
 
-            <section class="post-full-content" style="margin-top: 20px;">
+            <section class="post-full-content" style="margin-top: 60px;">
                 <div class="kg-card-markdown">
                     {{ content }}
                 </div>
@@ -194,6 +194,7 @@ into the {body} of the default.hbs template -->
 <!-- /post -->
 
 <!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
 
 
 
