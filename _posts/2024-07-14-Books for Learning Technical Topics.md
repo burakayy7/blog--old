@@ -14,6 +14,6 @@ All of these are going to be in sequential order, so the first one is my first e
 
 <p align="center">
     <h2>Practical Algebra: A Self-Teaching Guide, Second Edition</h2>
-    <img src="http://some_place.com/image.png" />
+    <img src="https://m.media-amazon.com/images/I/81B0wgtFaXL._SL1500_.jpg" />
 </p>
 
