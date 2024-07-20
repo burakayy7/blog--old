@@ -162,3 +162,48 @@ As you have probably guessed, this book isn't really a highly technical book. It
 
 
 This book is just a **classic!** It was written a long time ago by a famous mathematician, George Pólya, and it will show you how to **think** about solving problems. It isn't necessarily a textbook, more of like a novel; but it does provide you with problems and solutions. I just love this, it makes you actually want to think!
+
+
+<div align="center">
+    <h2><a href="https://amzn.to/3zS4H9R" style="text-decoration: none; color: inherit;">Solving Mathematical Problems: A Personal Perspective</a></h2>
+    <img src="https://m.media-amazon.com/images/I/61ZunuxfNmL._SL1360_.jpg" width="500" height="700" />
+    <div style="font-size: 32px;">
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: lgihtgray;">★</span>
+    </div>
+</div>
+
+I haven't actually finished this book, but from what I have read, I think it gives a pretty good perspective on how to think about math topics. But I don't suggest to use this for studying. It's more of a free-time type of book; but nonetheless, I still think it's a valuable resource. 
+
+
+<div align="center">
+    <h2><a href="https://amzn.to/3LwglcP" style="text-decoration: none; color: inherit;">Everaise Academy: Math Competitions 1</a></h2>
+    <img src="(https://m.media-amazon.com/images/I/51DV0nDj5jL._SL1500_.jpg)" width="500" height="700" />
+    <div style="font-size: 32px;">
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: lgihtgray;">★</span>
+    </div>
+</div>
+
+If you want to quickly prepare for Math competitions (AMC 10/12, AIME, etc) I **highly** suggest this book. It will quickly give you the gist of every topic, without relying on too much memorization. But if you are looking to learn theory, I don't think this is the best book. It still challenges you to think and solve hard problems on your own, though. I kind of wish I had started with this book because then maybe I would of been more motivated to compete in the AMCs.
+
+
+<div align="center">
+    <h2><a href="https://amzn.to/3zNgi9X" style="text-decoration: none; color: inherit;">Concrete Mathematics: A Foundation for Computer Science (2nd Edition)</a></h2>
+    <img src="https://m.media-amazon.com/images/I/91vRF15qLuL._SL1500_.jpg" width="500" height="700" />
+    <div style="font-size: 32px;">
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+    </div>
+</div>
+
+Again, this book is a must for learning algorithms! I just started this book, and I already felt like this was a masterpiece after the first few pages. **Every Computer Science** student should read this at some point!! Perfect!
