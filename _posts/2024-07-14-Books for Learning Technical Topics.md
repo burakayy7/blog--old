@@ -181,7 +181,7 @@ I haven't actually finished this book, but from what I have read, I think it giv
 
 <div align="center">
     <h2><a href="https://amzn.to/3LwglcP" style="text-decoration: none; color: inherit;">Everaise Academy: Math Competitions 1</a></h2>
-    <img src="(https://m.media-amazon.com/images/I/51DV0nDj5jL._SL1500_.jpg)" width="500" height="700" />
+    <img src="https://m.media-amazon.com/images/I/51DV0nDj5jL._SL1500_.jpg" width="500" height="700" />
     <div style="font-size: 32px;">
         <span style="color: gold;">★</span>
         <span style="color: gold;">★</span>
