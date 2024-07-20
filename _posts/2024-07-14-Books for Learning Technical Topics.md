@@ -31,8 +31,11 @@ I got this book at the end of 6th grade, and I think that it is a wonderful book
 <div align="center">
     <h2><a href="https://amzn.to/3zU3EGw" style="text-decoration: none; color: inherit;">The Art of Problem Solving, Vol. 1: The Basics</a></h2>
     <div style="display: flex; justify-content: center; gap: 10px;">
-        <img src="https://m.media-amazon.com/images/I/8199N6ZXxzL._SL1500_.jpg" width="400" height="600" />
-        <img src="https://m.media-amazon.com/images/I/81X0WvAv07L._SL1500_.jpg" width="400" height="600" />
+        <img src="https://m.media-amazon.com/images/I/8199N6ZXxzL._SL1500_.jpg" width="400" height="550" />
+        <img src="https://m.media-amazon.com/images/I/81X0WvAv07L._SL1500_.jpg" width="400" height="550" />
+    </div>
+    <div style="display: flex; justify-content: center; gap: 10px;">
+        <a href="https://amzn.to/3Lz3Nli" style="text-decoration: none; color: inherit;">Solutions Manual</a>
     </div>
     <div style="font-size: 32px; margin-top: 10px;">
         <span style="color: gold;">★</span>
@@ -48,6 +51,21 @@ Right after I finished the Algebra book, I went on to this. And let me tell you,
 
 
 <div align="center">
+    <h2><a href="https://amzn.to/3Ww9kz6" style="text-decoration: none; color: inherit;">Optimal State Estimation: Kalman, H Infinity, and Nonlinear Approaches</a></h2>
+    <img src="https://m.media-amazon.com/images/I/61KmyM8ItQL._SL1360_.jpg" width="500" height="700" />
+    <div style="font-size: 32px;">
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: lightgray;">★</span>
+    </div>
+</div>
+
+This book is considered a classic in the field of control theory, and I had initially gotten this in 9th grade to learn the theory behind some of my projects. However, I was way ahead of myself, as this book is like a graduate level text. It is really heavy in Linear Algebra and Calculus (which I didn't know at the time). In fact, I think this is probably the most dense book I ever had. But now with all of the knowlegde I have accumulated over the years, I highly recommend this book for people who want to dive deep, very deep, into this subject.
+
+
+<div align="center">
     <h2><a href="https://amzn.to/4c0dzaU" style="text-decoration: none; color: inherit;">Data Science from Scratch: First Principles with Python 2nd Edition</a></h2>
     <img src="https://m.media-amazon.com/images/I/812I0mhF0DL._SL1500_.jpg" width="500" height="700" />
     <div style="font-size: 32px;">
@@ -60,3 +78,87 @@ Right after I finished the Algebra book, I went on to this. And let me tell you,
 </div>
 
 This book is about, like the title suggests, teaching the theory and algorithms behind data science; from regression and decision trees to machine learning and NLP. But be aware that this book is very dense. It really asks a lot of time and I don't think you should read it in a sequential order. But putting that aside, this book is just amazing. You will be able to follow along with the author as he teaches you the basics then the nuts and bolts of how complicated algorithms work! By the end, I guarentee that you will learn a lot and have a lot of confidence in your programming abilities!
+
+<div align="center">
+    <h2><a href="https://amzn.to/3Wgi9vA" style="text-decoration: none; color: inherit;">TinyML: Machine Learning with TensorFlow Lite on Arduino and Ultra-Low-Power Microcontrollers</a></h2>
+    <img src="https://m.media-amazon.com/images/I/81nihP0ASSL._SL1500_.jpg" width="500" height="700" />
+    <div style="font-size: 32px;">
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: lightgray;">★</span>
+    </div>
+</div>
+
+If you are interested in ML at the ultra-edge, then this is your book! It's amazing; you will learn and actually apply 5 ML projects on arduino based microcontrollers! In my opinion, this is one of my favorite topics in emebedded systems, in fact, this book motivated me to do my science fair project! I highly recommend this to anyone in electroncis or embedded systems!
+
+
+<div align="center">
+    <h2><a href="https://amzn.to/4cQhk3E" style="text-decoration: none; color: inherit;">The Art of Problem Solving, Vol. 2: And Beyond</a></h2>
+    <div style="display: flex; justify-content: center; gap: 10px;">
+        <img src="https://m.media-amazon.com/images/I/81iu17-BfaL._SL1500_.jpg" width="400" height="550" />
+        <img src="https://m.media-amazon.com/images/I/81CWWytpRhL._SL1500_.jpg" width="400" height="550" />
+    </div>
+    <div style="display: flex; justify-content: center; gap: 10px;">
+        <a href="https://amzn.to/3LvUtyj" style="text-decoration: none; color: inherit;">Solutions Manual</a>
+    </div>
+    <div style="font-size: 32px; margin-top: 10px;">
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+    </div>
+</div>
+
+This is the second Part of the AoPS Contest Books, and is even more difficult than Volume 1. I have met many, many people who got cocky and skipped Volume 1 and went directly to Volume 2, and ended up quitting entirely (sometimes even the subject of math) due to how much this book will push you. If in Volume 1 you were required to just follow along and solve the problems, here you are expected to derive equations yourself. However, if you really want to learn, I highly suggest this. Even though this was intended to be used by students with instructors, it is still one of my favorite resources for learning the "puzzle" aspect of math!
+
+
+
+<div align="center">
+    <h2><a href="https://amzn.to/46fMAXn" style="text-decoration: none; color: inherit;">Deep Learning from Scratch: Building with Python from First Principles</a></h2>
+    <img src="https://m.media-amazon.com/images/I/81N8EDOXSvL._SL1500_.jpg" width="500" height="700" />
+    <div style="font-size: 32px;">
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: lightgray;">★</span>
+        <span style="color: lightgray;">★</span>
+    </div>
+</div>
+
+I bought this book after the Data Science book, in hopes of getting a more in depth understanding to DL, however, I didn't quite like how this book taught it. While some really like this book, especially with how it gives you multiple different ways to think about concepts (which is actually the first time I have ever seen this in a bok), I felt like it failed in delivering the fundamentals aspect of DL. 
+
+
+
+<div align="center">
+    <h2><a href="https://amzn.to/3LxmFB6" style="text-decoration: none; color: inherit;">Love and Math</a></h2>
+    <img src="https://m.media-amazon.com/images/I/81QDWBg4t6L._SL1500_.jpg" width="500" height="700" />
+    <div style="font-size: 32px;">
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: lightgray;">★</span>
+        <span style="color: lightgray;">★</span>
+    </div>
+</div>
+
+As you have probably guessed, this book isn't really a highly technical book. It's more like an autobiography which also happens to touch on math concepts. But I included them here because it still provides a way for someone to get interested in math. I highly recommend this if you want to see an alternative perspective to math.
+
+
+
+<div align="center">
+    <h2><a href="https://amzn.to/3LDMFdP" style="text-decoration: none; color: inherit;">How to Solve It: A New Aspect of Mathematical Method (Princeton Science Library, 34)</a></h2>
+    <img src="https://m.media-amazon.com/images/I/71wsHB2XIOL._SL1500_.jpg" width="500" height="700" />
+    <div style="font-size: 32px;">
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+        <span style="color: gold;">★</span>
+    </div>
+</div>
+
+
+This book is just a **classic!** It was written a long time ago by a famous mathematician, George Pólya, and it will show you how to **think** about solving problems. It isn't necessarily a textbook, more of like a novel; but it does provide you with problems and solutions. I just love this, it makes you actually want to think!
