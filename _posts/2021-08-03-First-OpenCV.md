@@ -4,7 +4,7 @@ current: post
 navigation: true
 title: "I want to learn OpenCV and AI"
 date: 2021-08-03
-cover: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/OpenCV_Logo_with_text_svg_version.svg/800px-OpenCV_Logo_with_text_svg_version.svg.png'
+cover: 'https://github.com/user-attachments/assets/01b63b05-5b67-4972-b843-6b6633d5872f'
 class: post-template
 ---
 
